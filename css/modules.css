@@ -1,5 +1,8 @@
 body {
-  font: 1.1em/1.15em Ubuntu; }
+  font: 17px/18px Ubuntu; }
+
+.btn {
+  font-family: Ubuntu; }
 
 .events {
   display: flex;
@@ -293,3 +296,20 @@ td > span {
   .image:nth-of-type(odd) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%); }
+
+.btn {
+  background: #A00000;
+  color: #fefefe;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 400;
+  border: 0;
+  padding: .5em 1.25em; }
+  .btn:hover {
+    cursor: pointer; }
+  .btn-big {
+    font-size: 1.5em; }
+  .btn-small {
+    font-size: 0.75em; }
+  .btn-alt {
+    background: #0A1A6A; }
