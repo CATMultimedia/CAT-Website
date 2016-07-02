@@ -1,0 +1,15 @@
+$font-line-height: 1.5em !default;
+$font-base-size: 1rem !default;
+
+$red: #A00000;
+$red2: #A03030;
+$blue: #0A1A6A;
+$blue2: #202C6C;
+$blue3: #366CAC;
+$teal: #026161;
+$orange: #EC8412;
+$green: #659603;
+
+html {font:17px/18px Ubuntu;}
+
+@import 'modules';
