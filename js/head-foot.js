@@ -18,24 +18,6 @@ function hideMenu(){
 }
 
 //DESKTOP FUNCTION
-function showInnerMenu(itemID){
-    var innerMenu = document.getElementById(itemID);
-    var allInnerMenus = document.querySelectorAll(".innerMenu");
-    for (var i=0; i < allInnerMenus.length; i++){
-        if (allInnerMenus[i].className === "innerMenu showMe" && allInnerMenus[i].id !== itemID){
-            allInnerMenus[i].className = "innerMenu";
-            break;
-        }
-    }
-    if (innerMenu.className === "innerMenu"){
-        innerMenu.className = "innerMenu showMe";
-    }
-    
-    else {
-        innerMenu.className = "innerMenu";
-    }
-}
-
 var quicklinkBtn = document.getElementById("quicklink");
 quicklinkBtn.addEventListener("click", showQL);
 

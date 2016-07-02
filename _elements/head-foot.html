@@ -23,7 +23,7 @@
                         <li><a href="#"><img src="../img/bars.svg" alt="" class="resourceImg"><br>Students</a></li>
                         <li><a href="#"><img src="../img/bars.svg" alt="" class="resourceImg"><br>Parents</a></li>
                         <li><a href="#"><img src="../img/bars.svg" alt="" class="resourceImg"><br>Faculty</a></li>
-                        <li><a href="#"><img src="../img/bars.svg" alt="" class="resourceImg" id="quicklink"><br>Quicklinks</a>
+                        <li id="quicklink"><a href="#"><img src="../img/bars.svg" alt="" class="resourceImg"><br>Quicklinks</a>
                         </li>
                     </ul>
                 </nav>
@@ -38,30 +38,30 @@
                 <nav class="menu">
                    
 <!--                    HIDDEN FOR DESKTOP START-->
-                    <img src="../img/cancel.svg" id="closeButton">
+                    <img src="../img/cancel.svg" id="closeButton" onclick="hideMenu">
                     <h2><img src="../img/bars.svg" alt="">Quicklinks</h2>
                     
                     <ul class="quicklinks">
-                        <li><a href="#" class="mainLink ql">Gradebook</a></li>
-                        <li><a href="#" class="mainLink ql">Calendar</a></li>
-                        <li><a href="#" class="mainLink ql">Cathub</a></li>
-                        <li><a href="#" class="mainLink ql">Directory</a></li>
+                        <li><a class="mainLink ql">Gradebook</a></li>
+                        <li><a class="mainLink ql">Calendar</a></li>
+                        <li><a class="mainLink ql">Cathub</a></li>
+                        <li><a class="mainLink ql">Directory</a></li>
                     </ul>  
 <!--                    HIDDEN FOR DESKTOP END-->
                      
                     <h2><img src="../img/bars.svg" alt="">Menu</h2> 
                     
                     <ul class="mainList">       
-                        <li><a href="" class="mainLink" onmouseover="showInnerMenu('about')">About CAT</a>
+                        <li class="mainLink">About CAT
                             <ul class="innerMenu" id="about">
                                 <li><a href="">Director's Message</a></li>
-                                <li><a href="">School Philosophy</a></li>
-                                <li><a href="">Facilities</a></li>
-                                <li><a href="">School Profile</a></li>
+                                <li><a href="http://www.facebook.com">School Philosophy</a></li>
+                                <li><a href="http://www.twitter.com">Facilities</a></li>
+                                <li><a href="http://www.youtube.com">School Profile</a></li>
                             </ul>
                         </li>
 
-                        <li><a href="" class="mainLink" onmouseover="showInnerMenu('academics')">Academics</a>
+                        <li class="mainLink">Academics
                             <ul class="innerMenu" id="academics">    	
                                 <li><a href="#">Early Childhood</a></li>
                                 <li><a href="#">Elementary</a></li>
@@ -70,7 +70,7 @@
                             </ul>
                         </li>
 
-                        <li><a href="" class="mainLink" onmouseover="showInnerMenu('campusLife')">Campus Life</a>
+                        <li class="mainLink" >Campus Life
                             <ul class="innerMenu" id="campusLife">
                                 <li><a href="http://www.youtube.com">Library</a></li>
                                 <li><a href="#">Sports</a></li>
@@ -82,7 +82,7 @@
                             </ul>
                         </li>
 
-                        <li><a href="" class="mainLink" onmouseover="showInnerMenu('joinUs')">Join Us</a>
+                        <li class="mainLink">Join Us
                             <ul class="innerMenu" id="joinUs">
                                 <li><a href="">Student admissions</a></li>
                                 <li><a href="">Employment</a></li>
@@ -130,6 +130,6 @@
             </div>
         </footer>
         
-        <script src="../js/script.js" type="text/javascript"></script>
+        <script src="../js/head-foot.js" type="text/javascript"></script>
     </body>
 </html>
