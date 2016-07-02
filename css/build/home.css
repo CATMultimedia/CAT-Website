@@ -69,9 +69,11 @@
   .events .event {
     display: flex; }
     .events .event .event-date {
-      line-height: 0.6em;
+      margin-top: -15px;
       font-size: 6.5em; }
       .events .event .event-date span {
+        display: block;
+        margin-top: -20px;
         text-transform: uppercase;
         font-size: 0.52em; }
     .events .event .event-info {
@@ -93,7 +95,7 @@
 @media screen and (min-width: 800px) {
   .news-more {
     font-size: 1.4em; } }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .news {
     display: flex; }
     .news .news-content {
@@ -112,6 +114,75 @@
       display: flex;
       margin: 0 0 0 -80px;
       -webkit-clip-path: polygon(4% 0, 100% 0%, 100% 100%, 21% 100%);
-      clip-path: polygon(4% 0, 100% 0%, 100% 100%, 21% 100%); } }
+      clip-path: polygon(4% 0, 100% 0%, 100% 100%, 21% 100%); }
+
+  .events {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0;
+    background-color: transparent; }
+    .events .event:nth-child(n+4) {
+      display: block; }
+    .events .events-header {
+      padding: 20px;
+      background-color: #0a1a6a;
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      flex: 1 1 26%; }
+      .events .events-header h1 {
+        font-size: 2.4em; }
+    .events .fa {
+      display: none; }
+    .events .event:nth-child(even) {
+      background-color: #0a1a6a; }
+    .events .event:nth-child(odd) {
+      background-color: rgba(10, 26, 106, 0.7); }
+    .events .event:last-of-type .event-hour {
+      right: 65px; }
+    .events .event {
+      padding: 20px;
+      position: relative;
+      flex: 1 1 46%; }
+      .events .event .event-date {
+        margin-top: 0;
+        font-size: 4.5em; }
+        .events .event .event-date span {
+          margin: -15px 0 0 10px;
+          font-size: 0.4em;
+          display: block; }
+      .events .event .event-info {
+        margin: 15px 0 0 10px; }
+        .events .event .event-info .event-title {
+          font-size: 1.2em;
+          text-transform: none; }
+        .events .event .event-info .event-place {
+          font-size: 1em;
+          font-style: italic;
+          margin-top: 10px; }
+      .events .event .event-hour {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.2em; }
+    .events .events-more {
+      -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 7% 100%);
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 7% 100%);
+      padding: 20px 20px 20px 40px;
+      margin-left: -75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1 1 26%;
+      background-color: #a00000; }
+      .events .events-more a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-size: 1.34em; }
+    .events .event-circles {
+      display: none; } }
 
 /*# sourceMappingURL=home.css.map */
