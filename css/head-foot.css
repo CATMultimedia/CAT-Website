@@ -112,7 +112,6 @@ h3 {
         font-size: 2em;
         position: relative;
         top: 13px;
-        right: 10px;
         text-shadow: none;
     }
 }
@@ -252,7 +251,7 @@ h3 {
     .mainLink.ql {
         padding: 1em 0;
         margin: 0;
-        width: 14.6em;
+        width: 17em;
         font-size: 1em;
         color: #0B1068;
         transition: all 0.3s;
@@ -295,9 +294,9 @@ h3 {
         color: white;
         text-transform: uppercase;
         height: 2.6em;
-        width: 13em;
+        width: 17em;
         background: #0B1068;
-        padding: 0.8em;
+        padding: 0.8em 0;
         top:0;
     }
     
@@ -310,7 +309,7 @@ h3 {
         border-top: 4.2em solid #0B1068;
         position: absolute;
         top: 0;
-        left: -2.3em;
+        left: -2.27em;
         z-index: 1;
     }
     
@@ -322,11 +321,17 @@ h3 {
     
     .nav-resources ul li{
         font-size: 0.6em;
-        padding: 0.9em 0.4em;
+        padding: 0 1em;
+        line-height: 1.5em;
         z-index: 3;
     }
     .resourceImg {
-        width: 1.7em;
+        font-size: 3.1em;
+    }
+
+    .nav-resources a:hover {
+        color: rgba(255, 255, 255, 0.7);
+        transition: all 0.3s;
     }
     
     .nav-social {
@@ -345,19 +350,18 @@ h3 {
         width: 0;
         height: 0; 
         border-left: 1.5em solid transparent;
-        border-right: 1.5em solid transparent;
+        border-right: 2px solid transparent;
         border-top: 2.7em solid white;
         position: absolute;
         top: 0em;
         left: -1.5em;
-        z-index: 0;
     }
     
-    .nav-social a {
-        z-index: 1;
+    .nav-social .socialIcon::before {
+        font-size: 1.7em;
     }
     
-    .nav-social img{
+    .nav-social .{
         width: 1.5em;
     }
     
