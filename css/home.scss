@@ -5,7 +5,11 @@ $blue: #0A1A6A;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif;
+
+}
+
+html {
+    font: 16px/18px 'Ubuntu', sans-serif;
 }
 
 .news-content {
@@ -55,86 +59,6 @@ $blue: #0A1A6A;
     }
 }
 
-.events {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $blue;
-    color: white;
-    padding: 40px;
-
-    .event:nth-child(n+4), .events-more {
-        display: none;
-    }
-
-    .fa {
-        font-size: 8em;
-        color: rgba(255, 255, 255, 0.4);
-    }
-
-    .events-header {
-        flex: 1 1 100%;
-        margin-bottom: 60px;
-
-        h1 {
-            text-transform: uppercase;
-            font-size: 4em;
-        }
-    }
-
-    .event-circles {
-        flex: 1 1 100%;
-        text-align: center;
-        margin-top: 80px;
-
-        .fa {
-            margin-right: 10px;
-            font-size: 1.5em;
-            color: rgba(255, 255, 255, 0.4);
-        }
-
-        .fa:last-of-type {
-            margin-right: 0;
-        }
-    }
-
-    .event {
-        display: flex;
-
-        .event-date {
-            margin-top: -15px;
-            font-size: 6.5em;
-
-            span {
-                display: block;
-                margin-top: -20px;
-                text-transform: uppercase;
-                font-size: 0.52em;
-            }
-        }
-
-        .event-info {
-            margin-left: 30px;
-
-            .event-title {
-                font-size: 2.2em;
-                text-transform: uppercase;
-            }
-
-            .event-place {
-                font-size: 2.2em;
-                margin-top: 20px;
-                font-style: italic;
-            }
-        }
-
-        .event-hour {
-            display: none;
-        }
-    }
-}
-
 @media screen and (min-width: 500px) {
     .news-text {
         font-size: 1.2em;
@@ -179,112 +103,6 @@ $blue: #0A1A6A;
             margin: 0 0 0 -80px;
             -webkit-clip-path: polygon(4% 0, 100% 0%, 100% 100%, 21% 100%);
             clip-path: polygon(4% 0, 100% 0%, 100% 100%, 21% 100%);
-        }
-    }
-
-    .events {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: stretch;
-        padding: 0;
-        background-color: transparent;
-
-        .event:nth-child(n+4) {
-            display: block;
-        }
-
-        .events-header {
-            padding: 20px;
-            background-color: rgba(10, 26, 106, 1);
-            display: flex;
-            align-items: center;
-            margin-bottom: 0;
-            flex: 1 1 26%;
-
-            h1 {
-                font-size: 2.4em;
-            }
-        }
-
-        .fa {
-            display: none;
-        }
-
-        .event:nth-child(even) {
-            background-color: rgba(10, 26, 106, 1);
-        }
-
-        .event:nth-child(odd) {
-            background-color: rgba(10, 26, 106, 0.7);
-        }
-
-        .event:last-of-type {
-            .event-hour {
-                right: 65px;
-            }
-        }
-
-        .event {
-            padding: 20px;
-            position: relative;
-            flex: 1 1 46%;
-
-            .event-date {
-                margin-top: 0;
-                font-size: 4.5em;
-
-                span {
-                    margin: -15px 0 0 10px;
-                    font-size: 0.4em;
-                    display: block;
-                }
-            }
-
-            .event-info {
-                margin: 15px 0 0 10px;
-
-                .event-title {
-                    font-size: 1.2em;
-                    text-transform: none;
-                }
-
-                .event-place {
-                    font-size: 1em;
-                    font-style: italic;
-                    margin-top: 10px;
-                }
-            }
-
-            .event-hour {
-                display: block;
-                position: absolute;
-                bottom: 20px;
-                right: 20px;
-                font-size: 1.2em;
-            }
-        }
-
-        .events-more {
-            -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 7% 100%);
-            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 7% 100%);
-            padding: 20px 20px 20px 40px;
-            margin-left: -75px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex: 1 1 26%;
-            background-color: rgba(160, 0, 0, 1);
-
-            a {
-                text-transform: uppercase;
-                text-decoration: none;
-                color: white;
-                font-size: 1.34em;
-            }
-        }
-
-        .event-circles {
-            display: none;
         }
     }
 }

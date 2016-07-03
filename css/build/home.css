@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  font-family: 'Ubuntu', sans-serif; }
+  padding: 0; }
+
+html {
+  font: 16px/18px 'Ubuntu', sans-serif; }
 
 .news-content {
   padding: 40px; }
@@ -37,57 +39,6 @@
     width: 100%;
     display: block; }
 
-.events {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0A1A6A;
-  color: white;
-  padding: 40px; }
-  .events .event:nth-child(n+4), .events .events-more {
-    display: none; }
-  .events .fa {
-    font-size: 8em;
-    color: rgba(255, 255, 255, 0.4); }
-  .events .events-header {
-    flex: 1 1 100%;
-    margin-bottom: 60px; }
-    .events .events-header h1 {
-      text-transform: uppercase;
-      font-size: 4em; }
-  .events .event-circles {
-    flex: 1 1 100%;
-    text-align: center;
-    margin-top: 80px; }
-    .events .event-circles .fa {
-      margin-right: 10px;
-      font-size: 1.5em;
-      color: rgba(255, 255, 255, 0.4); }
-    .events .event-circles .fa:last-of-type {
-      margin-right: 0; }
-  .events .event {
-    display: flex; }
-    .events .event .event-date {
-      margin-top: -15px;
-      font-size: 6.5em; }
-      .events .event .event-date span {
-        display: block;
-        margin-top: -20px;
-        text-transform: uppercase;
-        font-size: 0.52em; }
-    .events .event .event-info {
-      margin-left: 30px; }
-      .events .event .event-info .event-title {
-        font-size: 2.2em;
-        text-transform: uppercase; }
-      .events .event .event-info .event-place {
-        font-size: 2.2em;
-        margin-top: 20px;
-        font-style: italic; }
-    .events .event .event-hour {
-      display: none; }
-
 @media screen and (min-width: 500px) {
   .news-text {
     font-size: 1.2em;
@@ -114,75 +65,6 @@
       display: flex;
       margin: 0 0 0 -80px;
       -webkit-clip-path: polygon(4% 0, 100% 0%, 100% 100%, 21% 100%);
-      clip-path: polygon(4% 0, 100% 0%, 100% 100%, 21% 100%); }
-
-  .events {
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    padding: 0;
-    background-color: transparent; }
-    .events .event:nth-child(n+4) {
-      display: block; }
-    .events .events-header {
-      padding: 20px;
-      background-color: #0a1a6a;
-      display: flex;
-      align-items: center;
-      margin-bottom: 0;
-      flex: 1 1 26%; }
-      .events .events-header h1 {
-        font-size: 2.4em; }
-    .events .fa {
-      display: none; }
-    .events .event:nth-child(even) {
-      background-color: #0a1a6a; }
-    .events .event:nth-child(odd) {
-      background-color: rgba(10, 26, 106, 0.7); }
-    .events .event:last-of-type .event-hour {
-      right: 65px; }
-    .events .event {
-      padding: 20px;
-      position: relative;
-      flex: 1 1 46%; }
-      .events .event .event-date {
-        margin-top: 0;
-        font-size: 4.5em; }
-        .events .event .event-date span {
-          margin: -15px 0 0 10px;
-          font-size: 0.4em;
-          display: block; }
-      .events .event .event-info {
-        margin: 15px 0 0 10px; }
-        .events .event .event-info .event-title {
-          font-size: 1.2em;
-          text-transform: none; }
-        .events .event .event-info .event-place {
-          font-size: 1em;
-          font-style: italic;
-          margin-top: 10px; }
-      .events .event .event-hour {
-        display: block;
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        font-size: 1.2em; }
-    .events .events-more {
-      -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 7% 100%);
-      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 7% 100%);
-      padding: 20px 20px 20px 40px;
-      margin-left: -75px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex: 1 1 26%;
-      background-color: #a00000; }
-      .events .events-more a {
-        text-transform: uppercase;
-        text-decoration: none;
-        color: white;
-        font-size: 1.34em; }
-    .events .event-circles {
-      display: none; } }
+      clip-path: polygon(4% 0, 100% 0%, 100% 100%, 21% 100%); } }
 
 /*# sourceMappingURL=home.css.map */
