@@ -44,6 +44,7 @@ html {
         }
 
         .news-text {
+            font-size: 0.9em;
             line-height: 1.6em;
         }
 
@@ -51,9 +52,14 @@ html {
             display: block;
             text-align: right;
             margin-top: 40px;
-            text-transform: uppercase;
-            color: $red;
-            text-decoration: none;
+
+            a, .icon-chevron-double {
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $red;
+                text-decoration: none;
+            }
+
         }
     }
 
@@ -71,6 +77,86 @@ html {
     }
 }
 
+.events {
+    .events-header {
+        padding: 20px;
+        background-color: $blue;
+
+        h1 {
+            text-transform: uppercase;
+            line-height: 1em;
+            color: white;
+        }
+    }
+
+    .event {
+        position: relative;
+        display: flex;
+        border-left: 12px solid $orange;
+        border-bottom: 1px solid lightgray;
+        color: $blue;
+        padding: 20px;
+
+        .event-date {
+            font-size: 3.5em;
+            line-height: 0.6em;
+
+            span {
+                display: block;
+                margin-left: 10px;
+                text-transform: uppercase;
+                font-size: 0.4em;
+            }
+        }
+
+        .event-info {
+            margin: 0 0 20px 15px;
+
+            .event-title {
+                font-size: 1.1em;
+                font-weight: bold;
+
+                span {
+                    font-weight: normal;
+                }
+            }
+
+            .event-place {
+                font-size: 0.9em;
+                font-weight: bold;
+                margin-top: 10px;
+                font-style: italic;
+            }
+        }
+
+        .event-hour {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-weight: bold;
+        }
+    }
+
+    .events-more {
+        text-decoration: none;
+
+        div {
+            background-color: $red;
+            padding: 20px;
+            text-align: right;
+
+            h1, .icon-chevron-double {
+                font-size: 1.5em;
+                font-weight: bold;
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                display: inline-block;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 500px) {
     .news {
         .news-content {
@@ -81,6 +167,30 @@ html {
 
         .news-image {
             margin-top: -100px;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .events {
+        display: flex;
+        flex-flow: row wrap;
+
+        .events-header {
+            margin-right: -70px;
+            -webkit-clip-path: polygon(0 0, 100% 0, 94% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 94% 100%, 0 100%);
+            order: -2;
+            flex: 1 1 60%;
+        }
+
+        .event {
+            flex: 1 1 50%;
+        }
+
+        .events-more {
+            order: -1;
+            flex: 1 1 40%;
         }
     }
 }
@@ -133,5 +243,43 @@ html {
                 object-fit: cover;
             }
         }
+    }
+
+    .events {
+        .events-header {
+            margin-right: -100px;
+            flex: 1 1 75%;
+
+            h1 {
+                font-size: 2.8em;
+            }
+        }
+
+        .event:last-of-type {
+            border-right: none;
+        }
+
+        .event {
+            border-bottom: none;
+            flex: 1 1 25%;
+            border-right: 1px solid lightgray;
+            border-left: none;
+            border-bottom: none;
+            border-top: 12px solid $orange;
+        }
+
+        .events-more {
+            flex: 1 1 25%;
+
+            div {
+                padding: 32px 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .news {
+        max-height: $news-img-height - 100px;
     }
 }
