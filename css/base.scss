@@ -30,7 +30,6 @@ body {
 h1, h2, h3 {
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 ul {
@@ -39,7 +38,6 @@ ul {
 }
 
 ul li {
-    box-sizing: border-box;
     list-style: none;
 }
 
@@ -48,9 +46,6 @@ a, a:visited {
     color: inherit;
 }
 
-h3 {
-    text-align: left;
-}
 /*END*/
 
 

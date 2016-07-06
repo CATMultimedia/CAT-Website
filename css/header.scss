@@ -2,6 +2,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
+    margin-bottom: -0.5px;
     width: 100vw;
 }
 /*Changes to hidden for DK*/
@@ -88,6 +89,8 @@
     left: 100vw;
     transition: left 0.3s ease-in-out;
     z-index: 3;
+
+    h1, h2, h3 {text-align:center;}
 }
 
 @media all and (min-width: 768px){
@@ -256,7 +259,7 @@
     .nav-resources {
         color: white;
         text-transform: uppercase;
-        height: 2.6em;
+        height: 4.2em;
         width: 17em;
         background: #0B1068;
         padding: 0.8em 0;
@@ -301,9 +304,9 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 7em;
+        width: 10em;
         padding: 0.45em;
-        height: 1.8em;
+        /* height: 1.8em; */
         top: 4.2em;
         background: white;
     }
@@ -325,7 +328,7 @@
     }
 
     .nav-social {
-        width: 1.5em;
+        /* width: 1.5em; */
     }
 
     .innerMenu {

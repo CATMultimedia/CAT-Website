@@ -1,4 +1,6 @@
 .news {
+    margin-bottom: -5px;
+
     .news-content {
         padding: 30px 20px 70px 20px;
 
@@ -59,6 +61,7 @@
     .events-header {
         padding: 20px;
         background-color: $blue;
+        z-index:10;
 
         h1 {
             text-transform: uppercase;
@@ -117,11 +120,13 @@
 
     .events-more {
         text-decoration: none;
+        z-index:9;
 
         div {
             background-color: $red;
             padding: 20px;
             text-align: right;
+            margin-top: 1px;
 
             h1, .icon-chevron-double {
                 font-size: 1.5em;
