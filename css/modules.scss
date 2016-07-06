@@ -10,7 +10,7 @@ $all: $blue3;
 
 .btn {font-family:Ubuntu;}
 
-.events {
+.eventscal {
 	display:flex;
 	flex-flow:row wrap;
 	justify-content: center;
@@ -179,7 +179,7 @@ td > span{
 }
 
 
-.news {
+.article {
 	padding:0 2em 0.5em;
 	border-bottom:1px solid #ccc;
 	margin:1em 2em;
