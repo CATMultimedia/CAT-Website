@@ -1,8 +1,32 @@
-        <img src="../img/Menu.svg" id="hamburgerButton">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colegio Americano de Torreón <?php if (!empty($pagetitle)) { ?> - <?php echo $page-title; ?><?php } else { echo " - excellence for life";} ?></title>
+        <link rel="stylesheet" href="/css/base.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300" rel="stylesheet" type="text/css">
+		<script async type="text/javascript">
+		  WebFontConfig={google:{ families:['Ubuntu:300,400,400italic,500,500italic,700,700italic:latin' ]}};(function() {var wf = document.createElement('script');wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';wf.type = 'text/javascript';wf.async = 'true';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(wf, s);})();
+		  </script>
+
+    </head>
+
+    <body <?php if (!empty($pagetitle)) { ?> class="not-home" <?php } ?>>
+        <img src="/img/Menu.svg" id="hamburgerButton">
         <header class="topHeader">
-            <div class="logo">
-                <img class="catLogo" alt="Colegio Americano de Torreón" src="https://goo.gl/37kmJp">
-                <img src="../img/logo-name.svg" class="catName">
+            <div class="logo" data-slides='[
+					"/img/himg-1.jpg",
+					"/img/himg-2.jpg",
+					"/img/himg-3.jpg",
+					"/img/himg-4.jpg",
+					"/img/himg-5.jpg",
+					"/img/himg-6.jpg",
+					"/img/himg-7.jpg",
+					"/img/himg-8.jpg"
+			]'>
+                <a href="/"><img class="catLogo" alt="Colegio Americano de Torreón" src="/img/logo.png"></a>
+                <a href="/"><img src="/img/logo-name.svg" class="catName"></a>
             </div>
 
 
@@ -27,7 +51,7 @@
                 <nav class="menu">
 
 <!--                    HIDDEN FOR DESKTOP START-->
-                    <img src="../img/cancel.svg" id="closeButton" onclick="hideMenu">
+                    <img src="/img/cancel.svg" id="closeButton" onclick="hideMenu">
                     <h2><span class="icon-quicklinks"> </span>Quicklinks</h2>
 
                     <ul class="quicklinks">
@@ -43,7 +67,7 @@
                     <ul class="mainList">
                         <li class="mainLink">About CAT
                             <ul class="innerMenu" id="about">
-                                <li><a href="#">Director's Message</a></li>
+                                <li><a href="/about/directors-message.php">Director's Message</a></li>
                                 <li><a href="#">School Philosophy</a></li>
                                 <li><a href="#">Facilities</a></li>
                                 <li><a href="#">School Profile</a></li>
