@@ -15,7 +15,16 @@
     <body <?php if (!empty($pagetitle)) { ?> class="not-home" <?php } ?>>
         <img src="/img/Menu.svg" id="hamburgerButton">
         <header class="topHeader">
-            <div class="logo">
+            <div class="logo" data-slides='[
+					"/img/himg-1.jpg",
+					"/img/himg-2.jpg",
+					"/img/himg-3.jpg",
+					"/img/himg-4.jpg",
+					"/img/himg-5.jpg",
+					"/img/himg-6.jpg",
+					"/img/himg-7.jpg",
+					"/img/himg-8.jpg"
+			]'>
                 <a href="/"><img class="catLogo" alt="Colegio Americano de Torreón" src="/img/logo.png"></a>
                 <a href="/"><img src="/img/logo-name.svg" class="catName"></a>
             </div>

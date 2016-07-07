@@ -1,41 +1,26 @@
-$(document).ready(function(){
+(function($) {
+    var $slides = $('[data-slides]');
+    var images = $slides.data('slides');
+    var count = images.length;
+    var loader = new Array();
 
-var images = Array("/img/himg-1.jpg",
-				"/img/himg-2.jpg",
-               "/img/himg-3.jpg",
-               "/img/himg-4.jpg",
-               "/img/himg-5.jpg",
-               "/img/himg-6.jpg",
-               "/img/himg-7.jpg",
-               "/img/himg-8.jpg");
-var currimg = 0;
+	function preload() {
+		for (i = 0; i < count; i++) {
+			loader[i] = new Image()
+			loader[i].src = images[i]
+		}
+	}
 
-
-function bgimg(){
-
-   $('.logo').animate({ opacity: 1 }, 500,function(){
-
-        //finish animation, fade between images
-        $('.logo').animate({ opacity: 0.5 }, 100, function(){
-
-            currimg++;
-            if(currimg > images.length-1){
-                currimg=0;
-            }
-
-            var newimage = images[currimg];
-
-            //swap images
-            $('.logo').css("background-image", "url("+newimage+")");
-
-            //animate fully back in
-            $('.logo').animate({ opacity: 1 }, 400,function(){
-
-                //set timer for next
-                setTimeout(bgimg,5000);
+    var slideshow = function() {
+        $slides
+            .css('background-image', 'url("' + images[Math.floor(Math.random() * count)] + '")')
+            .animate({ opacity: 1 }, 400)
+            .show(0, function() {
+                setTimeout(slideshow, 5000);
             });
-        });
-    });
-  }
-  setTimeout(bgimg,5000);
-});
+    };
+
+	preload();
+    slideshow();
+
+}(jQuery));
