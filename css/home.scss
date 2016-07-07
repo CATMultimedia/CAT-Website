@@ -78,6 +78,10 @@
         color: $blue;
         padding: 20px;
 
+        &:last-of-type {
+	        border-bottom:0;
+        }
+
         .event-date {
             font-size: 3.5em;
             line-height: 0.6em;
