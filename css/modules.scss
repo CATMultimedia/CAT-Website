@@ -228,9 +228,10 @@ td > span{
 	font-weight:500;
 	-webkit-clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%);
-	margin:-1.5em 0 -1.5em -1vw;
 	border:0;
 }
+
+
 
 .page-subtitle {
 	color:$red;
@@ -243,6 +244,9 @@ td > span{
 }
 
 @media all and (min-width: 768px){
+	.page-title {
+		margin:-2em 0 -2em -1vw;
+	}
 	main.inside {
 		display:flex;
 		flex-flow:row wrap;
