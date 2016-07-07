@@ -404,3 +404,19 @@ td > span{
 	}
 }
 
+section ul {
+	margin:1em 0 0 4em;
+	padding:0;
+	list-style: disc;
+}
+
+section ul li {
+	list-style:disc;
+	padding: 0.5em 0;
+	margin-bottom: 0.25em;
+}
+
+section a {
+	color:$blue3;
+}
+
