@@ -23,7 +23,7 @@
 }
 
 .logo {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8)), url(/img/header-image.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8)), url(/img/himg-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -33,10 +33,26 @@
     align-items: center; /*to flex-star for DK*/
     padding: 1em;
     padding-bottom: 20em;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+	margin-bottom:-2em;
+
 }
 
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .logo {
+	    background-attachment: scroll;
+	}
+}
+
+
 	.not-home {
-		.logo {padding-bottom:8em}
+		.logo {
+			padding-bottom:8em;
+	        clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+			-webkit-clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+		}
 	}
 
 @media all and (min-width: 768px){
@@ -45,6 +61,9 @@
         justify-content: flex-start;
         padding: 0.2em;
         padding-bottom: 20em;
+        clip-path:none;
+        -webkit-clip-path:none;
+        margin-bottom:0;
     }
 
 	.not-home {
@@ -89,8 +108,22 @@
     }
 }
 
+.no-scroll {
+	overflow: hidden;
+	height: 200px;
+
+	main, footer.pie {display: none;}
+}
+
+.disable {
+	main, footer {
+		display: none;
+	}
+}
+
 .menu {
-    color: #D30004;
+    background:#fefefe;
+    color: $red;
     position: fixed;
     height: 100vh;
     overflow-y: scroll;
@@ -110,7 +143,7 @@
         position: relative;
         overflow-y: visible;
         height: auto;
-        background: #D30004;
+        background: $red;
         z-index: 1;
     }
 }
@@ -133,7 +166,7 @@
 }
 
 .menu h2 {
-    background: #D30004;
+    background: $red;
     color: white;
     text-transform: uppercase;
     font-size: 1.3em;
@@ -142,7 +175,7 @@
 }
 
 .menu h2:nth-child(2){
-    background: #0B1068;
+    background: $blue;
 }
 
 .menu h2 img {
@@ -163,7 +196,7 @@
 
 @media all and (min-width: 768px){
     .mainList{
-        background: #D30004;
+        background: $red;
         position: static;
         flex-wrap: nowrap;
         position: static;
@@ -199,7 +232,7 @@
 
 .mainLink:not(.ql){
     width: 100vw;
-    color: #D30004; /*MAIN RED*/
+    color: $red; /*MAIN RED*/
 }
 
 @media all and (min-width: 768px){
@@ -215,7 +248,7 @@
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
     padding: 1em;
     box-sizing: border-box;
-    color: #0B1068; /*MAIN BLUE*/
+    color: $blue; /*MAIN BLUE*/
 }
 
 @media all and (min-width: 768px){
@@ -228,12 +261,12 @@
         margin: 0;
         width: 17em;
         font-size: 1em;
-        color: #0B1068;
+        color: $blue;
         transition: all 0.3s;
     }
 
     .mainLink.ql:hover {
-        background: #2d3286;
+        background: lighten($blue,30);
         color: white;
     }
 }
@@ -270,7 +303,7 @@
         text-transform: uppercase;
         height: 4.2em;
         width: 17em;
-        background: #0B1068;
+        background: $blue;
         padding: 0.8em 0;
         top:0;
     }
@@ -281,7 +314,7 @@
         height: 0;
         border-left: 2.3em solid transparent;
         border-right: 2.3em solid transparent;
-        border-top: 4.2em solid #0B1068;
+        border-top: 4.2em solid $blue;
         position: absolute;
         top: 0;
         left: -2.27em;
@@ -419,7 +452,7 @@
         font-weight: 700;
         margin: 0.4em 0.8em;
         display: inline-block;
-        color: #D30004;
+        color: $red;
     }
     .quicklinks {
         position: absolute;
