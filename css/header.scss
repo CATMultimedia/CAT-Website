@@ -266,7 +266,7 @@
     }
 
     .mainLink.ql:hover {
-        background: lighten($blue,30);
+        background: $blue;
         color: white;
     }
 }
