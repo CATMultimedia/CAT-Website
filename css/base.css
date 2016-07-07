@@ -125,7 +125,7 @@ a, a:visited {
   #hamburgerButton {
     display: none; } }
 .logo {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8)), url(/img/header-image.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8)), url(/img/himg-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -135,33 +135,57 @@ a, a:visited {
   /*to row for DT*/
   align-items: center;
   /*to flex-star for DK*/
+  transition: background-image 1s ease;
   padding: 1em;
-  padding-bottom: 20em; }
+  padding-bottom: 20em;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  margin-bottom: -2em; }
+  .logo:before {
+    content: "\0020";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8));
+    width: 100%;
+    position: absolute;
+    height: 115%;
+    top: 0;
+    left: 0;
+    z-index: 0; }
 
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .logo {
+    background-attachment: scroll; } }
 .not-home .logo {
-  padding-bottom: 8em; }
+  padding-bottom: 8em;
+  clip-path: none;
+  -webkit-clip-path: none; }
 
 @media all and (min-width: 768px) {
   .logo {
     flex-direction: row;
     justify-content: flex-start;
     padding: 0.2em;
-    padding-bottom: 20em; }
+    padding-bottom: 20em;
+    clip-path: none;
+    -webkit-clip-path: none;
+    margin-bottom: 0; }
+    .logo:before {
+      height: 100%; }
 
   .not-home .logo {
     padding-bottom: 10em; } }
 .catLogo {
   width: 4em;
   height: 4em;
-  flex-shrink: 1; }
+  flex-shrink: 1;
+  z-index: 3;
+  position: relative; }
 
 @media all and (min-width: 768px) {
   .catLogo {
     z-index: 2;
     height: 9em;
     width: 9em;
-    margin-right: 0.8em;
-    position: relative; } }
+    margin-right: 0.8em; } }
 .catName {
   height: 1.05em;
   font-size: 1.4em;
@@ -179,8 +203,18 @@ a, a:visited {
     position: relative;
     top: 16px;
     text-shadow: none; } }
+.no-scroll {
+  overflow: hidden;
+  height: 200px; }
+  .no-scroll main, .no-scroll footer.pie {
+    display: none; }
+
+.disable main, .disable footer {
+  display: none; }
+
 .menu {
-  color: #D30004;
+  background: #fefefe;
+  color: #BA0000;
   position: fixed;
   height: 100vh;
   overflow-y: scroll;
@@ -199,7 +233,7 @@ a, a:visited {
     position: relative;
     overflow-y: visible;
     height: auto;
-    background: #D30004;
+    background: #BA0000;
     z-index: 1; } }
 #closeButton {
   width: 0.9em;
@@ -214,7 +248,7 @@ a, a:visited {
   left: 0; }
 
 .menu h2 {
-  background: #D30004;
+  background: #BA0000;
   color: white;
   text-transform: uppercase;
   font-size: 1.3em;
@@ -222,7 +256,7 @@ a, a:visited {
   padding: 1em; }
 
 .menu h2:nth-child(2) {
-  background: #0B1068; }
+  background: #0A1A6A; }
 
 .menu h2 img {
   height: 1em;
@@ -240,7 +274,7 @@ a, a:visited {
 
 @media all and (min-width: 768px) {
   .mainList {
-    background: #D30004;
+    background: #BA0000;
     position: static;
     flex-wrap: nowrap;
     position: static;
@@ -268,7 +302,7 @@ a, a:visited {
     border: 0; } }
 .mainLink:not(.ql) {
   width: 100vw;
-  color: #D30004;
+  color: #BA0000;
   /*MAIN RED*/ }
 
 @media all and (min-width: 768px) {
@@ -281,7 +315,7 @@ a, a:visited {
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
   padding: 1em;
   box-sizing: border-box;
-  color: #0B1068;
+  color: #0A1A6A;
   /*MAIN BLUE*/ }
 
 @media all and (min-width: 768px) {
@@ -293,11 +327,11 @@ a, a:visited {
     margin: 0;
     width: 17em;
     font-size: 1em;
-    color: #0B1068;
+    color: #0A1A6A;
     transition: all 0.3s; }
 
   .mainLink.ql:hover {
-    background: #2d3286;
+    background: #0A1A6A;
     color: white; } }
 @media all and (max-width: 768px) {
   .mainLink.ql:nth-child(odd) {
@@ -324,7 +358,7 @@ a, a:visited {
     text-transform: uppercase;
     height: 4.2em;
     width: 17em;
-    background: #0B1068;
+    background: #0A1A6A;
     padding: 0.8em 0;
     top: 0; }
 
@@ -334,7 +368,7 @@ a, a:visited {
     height: 0;
     border-left: 2.3em solid transparent;
     border-right: 2.3em solid transparent;
-    border-top: 4.2em solid #0B1068;
+    border-top: 4.2em solid #0A1A6A;
     position: absolute;
     top: 0;
     left: -2.27em;
@@ -450,7 +484,7 @@ a, a:visited {
     font-weight: 700;
     margin: 0.4em 0.8em;
     display: inline-block;
-    color: #D30004; }
+    color: #BA0000; }
 
   .quicklinks {
     position: absolute;
@@ -470,7 +504,7 @@ a, a:visited {
   .news .news-content {
     padding: 30px 20px 70px 20px; }
     .news .news-content .news-header {
-      color: #A00000;
+      color: #BA0000;
       font-size: 2em;
       text-transform: uppercase;
       text-align: right; }
@@ -492,7 +526,7 @@ a, a:visited {
       .news .news-content .news-more a, .news .news-content .news-more .icon-chevron-double {
         font-weight: bold;
         text-transform: uppercase;
-        color: #A00000;
+        color: #BA0000;
         text-decoration: none; }
   .news .news-image {
     margin-top: -85px;
@@ -519,6 +553,16 @@ a, a:visited {
   border-bottom: 1px solid lightgray;
   color: #0A1A6A;
   padding: 20px; }
+  .events .event:last-of-type {
+    border-bottom: 0; }
+  .events .event.evt-ech {
+    border-left-color: #EC8412; }
+  .events .event.evt-es {
+    border-left-color: #026161; }
+  .events .event.evt-hs {
+    border-left-color: #659603; }
+  .events .event.evt-all {
+    border-left-color: #366CAC; }
   .events .event .event-date {
     font-size: 3.5em;
     line-height: 0.6em; }
@@ -548,7 +592,7 @@ a, a:visited {
   text-decoration: none;
   z-index: 9; }
   .events .events-more div {
-    background-color: #A00000;
+    background-color: #BA0000;
     padding: 20px;
     text-align: right;
     margin-top: 1px; }
@@ -627,6 +671,14 @@ a, a:visited {
     border-left: none;
     border-bottom: none;
     border-top: 12px solid #EC8412; }
+    .events .event.evt-ech {
+      border-top-color: #EC8412; }
+    .events .event.evt-es {
+      border-top-color: #026161; }
+    .events .event.evt-hs {
+      border-top-color: #659603; }
+    .events .event.evt-all {
+      border-top-color: #366CAC; }
   .events .events-more {
     flex: 1 1 25%; }
     .events .events-more div {
@@ -651,7 +703,7 @@ a, a:visited {
 
 .cal caption {
   color: #fefefe;
-  background: #A00000;
+  background: #BA0000;
   margin: 0;
   padding: 0.65em 1em 0 1em;
   text-align: justify;
@@ -676,7 +728,7 @@ td {
   font-weight: normal;
   text-align: center; }
   td.cal-today span {
-    background: #ff6d6d;
+    background: #ff8787;
     border-radius: 30px;
     color: #fefefe;
     font-weight: 600; }
@@ -804,19 +856,18 @@ td > span {
 .page-title {
   display: inline-block;
   left: 0;
-  background: #A00000;
-  padding: 0 3em 0 2vw;
+  background: #BA0000;
+  padding: 0 3em 0 4vw;
   font-size: 2em;
   line-height: 1.75em;
   color: #fefefe;
   font-weight: 500;
   -webkit-clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%);
-  margin: 0 0 0 -1vw;
   border: 0; }
 
 .page-subtitle {
-  color: #A00000;
+  color: #BA0000;
   font-size: 1.65em;
   line-height: 1.5em;
   margin: 0 0 1em 1vw;
@@ -824,6 +875,9 @@ td > span {
   font-style: italic; }
 
 @media all and (min-width: 768px) {
+  .page-title {
+    margin: -2em 0 -2em -1vw; }
+
   main.inside {
     display: flex;
     flex-flow: row wrap; }
@@ -948,7 +1002,7 @@ td > span {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%); }
 
 .btn {
-  background: #A00000;
+  background: #BA0000;
   color: #fefefe;
   font-size: 1em;
   text-transform: uppercase;
@@ -963,6 +1017,19 @@ td > span {
     font-size: 0.75em; }
   .btn-alt {
     background: #0A1A6A; }
+
+section ul {
+  margin: 1em 0 0 4em;
+  padding: 0;
+  list-style: disc; }
+
+section ul li {
+  list-style: disc;
+  padding: 0.5em 0;
+  margin-bottom: 0.25em; }
+
+section a {
+  color: #366CAC; }
 
 footer {
   background: #232323;

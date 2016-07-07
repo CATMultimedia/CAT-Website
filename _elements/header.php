@@ -67,7 +67,7 @@
                     <ul class="mainList">
                         <li class="mainLink">About CAT
                             <ul class="innerMenu" id="about">
-                                <li><a href="/about/directors-message.php">Director's Message</a></li>
+                                <li><a href="/about/directors-message">Director's Message</a></li>
                                 <li><a href="#">School Philosophy</a></li>
                                 <li><a href="#">Facilities</a></li>
                                 <li><a href="#">School Profile</a></li>
