@@ -221,16 +221,17 @@ td > span{
 	display:inline-block;
 	left:0;
 	background:$red;
-	padding:0 3em 0 2vw;
+	padding:0 3em 0 4vw;
 	font-size:2em;
 	line-height:1.75em;
 	color:#fefefe;
 	font-weight:500;
 	-webkit-clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%);
-	margin:0 0 0 -1vw;
 	border:0;
 }
+
+
 
 .page-subtitle {
 	color:$red;
@@ -243,6 +244,9 @@ td > span{
 }
 
 @media all and (min-width: 768px){
+	.page-title {
+		margin:-2em 0 -2em -1vw;
+	}
 	main.inside {
 		display:flex;
 		flex-flow:row wrap;

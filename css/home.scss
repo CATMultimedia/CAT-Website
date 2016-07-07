@@ -82,6 +82,12 @@
 	        border-bottom:0;
         }
 
+		&.evt-ech  {border-left-color:$orange;}
+		&.evt-es   {border-left-color:$teal;}
+		&.evt-hs   {border-left-color:$green;}
+		&.evt-all  {border-left-color:$blue3;}
+
+
         .event-date {
             font-size: 3.5em;
             line-height: 0.6em;
@@ -253,7 +259,14 @@
             border-left: none;
             border-bottom: none;
             border-top: 12px solid $orange;
+
+			&.evt-ech  {border-top-color:$orange;}
+			&.evt-es   {border-top-color:$teal;}
+			&.evt-hs   {border-top-color:$green;}
+			&.evt-all  {border-top-color:$blue3;}
+
         }
+
 
         .events-more {
             flex: 1 1 25%;
