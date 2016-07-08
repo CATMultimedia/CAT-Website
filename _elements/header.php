@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Colegio Americano de Torreón <?php if (!empty($pagetitle)) { ?> - <?php echo $page-title; ?><?php } else { echo " - excellence for life";} ?></title>
+        <title>Colegio Americano de Torreón <?php if (!empty($pagetitle)) { ?> - <?php echo $pagetitle; ?><?php } else { echo " - excellence for life";} ?></title>
         <link rel="stylesheet" href="/css/base.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300" rel="stylesheet" type="text/css">
 		<script async type="text/javascript">
-		  WebFontConfig={google:{ families:['Ubuntu:300,400,400italic,500,500italic,700,700italic:latin' ]}};(function() {var wf = document.createElement('script');wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';wf.type = 'text/javascript';wf.async = 'true';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(wf, s);})();
+			WebFontConfig = {google:{ families:['Ubuntu:300,400,400italic,500,500italic,700,700italic:latin' ]}};(function(d) {var wf = d.createElement('script'), s = d.scripts[0];wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';s.parentNode.insertBefore(wf, s);})(document);
 		  </script>
 
     </head>

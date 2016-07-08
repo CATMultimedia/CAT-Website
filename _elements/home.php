@@ -1,21 +1,8 @@
         <main>
             <section class="news" itemscope itemtype="http://schema.org/NewsArticle">
                 <article class="news-content">
-                    <h1 class="news-header">Latest News</h1>
-                    <p class="news-meta" itemprop="datePublished" content="2016-06-16T08:00">June 16</p>
-                    <h2 class="news-title" itemprop="headline">Graduation!</h2>
-                    <p class="news-text" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="news-more">
-                        <a href="#">Read More</a>
-                        <i class="icon-chevron-double"></i>
-                    </div>
+					<?php include "get-article.php"; ?>
                 </article>
-                <figure class="news-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                    <img src="/assets/news-001.jpg" alt="Article Image">
-                    <meta itemprop="url" content="http://lorempixel.com/1200/600/nature">
-                    <meta itemprop="width" content="1200">
-                    <meta itemprop="height" content="600">
-                </figure>
             </section>
             <section class="events">
                 <div class="events-header">
