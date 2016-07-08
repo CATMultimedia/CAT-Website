@@ -64,7 +64,7 @@
                     <h2><span class="icon-menu"> </span>Menu</h2>
 
                     <ul class="mainList">
-                        <li class="mainLink">About CAT
+                        <li class="mainLink"><a href="javascript:;">About CAT</a>
                             <ul class="innerMenu" id="about">
                                 <li><a href="/about/directors-message">Director's Message</a></li>
                                 <li><a href="#">School Philosophy</a></li>
@@ -73,7 +73,7 @@
                             </ul>
                         </li>
 
-                        <li class="mainLink">Academics
+                        <li class="mainLink"><a href="javascript:;">Academics</a>
                             <ul class="innerMenu" id="academics">
                                 <li><a href="#">Early Childhood</a></li>
                                 <li><a href="#">Elementary</a></li>
@@ -82,7 +82,7 @@
                             </ul>
                         </li>
 
-                        <li class="mainLink" >Campus Life
+                        <li class="mainLink" ><a href="javascript:;">Campus Life</a>
                             <ul class="innerMenu" id="campusLife">
                                 <li><a href="#">Library</a></li>
                                 <li><a href="#">Sports</a></li>
@@ -94,7 +94,7 @@
                             </ul>
                         </li>
 
-                        <li class="mainLink">Join Us
+                        <li class="mainLink"><a href="javascript:;">Join Us</a>
                             <ul class="innerMenu" id="joinUs">
                                 <li><a href="#">Student admissions</a></li>
                                 <li><a href="#">Employment</a></li>
