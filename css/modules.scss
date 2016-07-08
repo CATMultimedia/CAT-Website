@@ -184,6 +184,10 @@ td > span{
 	border-bottom:1px solid #ccc;
 	margin:1em 2em;
 
+	&:last-of-type {
+		border-bottom:none;
+	}
+
 	header {
 		background:$blue;
 		padding:0 2em;
