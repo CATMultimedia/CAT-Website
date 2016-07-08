@@ -184,6 +184,10 @@ td > span{
 	border-bottom:1px solid #ccc;
 	margin:1em 2em;
 
+	&:last-of-type {
+		border-bottom:none;
+	}
+
 	header {
 		background:$blue;
 		padding:0 2em;
@@ -194,14 +198,14 @@ td > span{
 		clip-path: polygon(0 0, 100% 0, 99% 100%, 0 100%);
 	}
 
-	.news-headline {
+	.article-headline {
 		padding:0.5em 0;
 		display:inline-block;
 		margin:0;
 		font-weight:400;
 	}
 
-	.news-meta {
+	.article-meta {
 		display:inline-block;
 		color:lighten($blue,60);
 		padding:0.5em 0;
@@ -210,12 +214,27 @@ td > span{
 		text-transform: uppercase;
 	}
 
-	.news-content {
+	.article-content {
 		font-size:0.95em;
 		line-height:1.75em;
+		margin-top:0.5em;
+
+		img {
+			max-width:100%;
+		}
+
+		img:first-of-type {
+			width: 50%;
+		    float: left;
+		    margin: 2em 1.5em 0 0;
+		    padding: 0.5em;
+		    border: 1px solid #aaa;
+		}
 	}
 
 }
+
+.news-previous-list, .news-archives-list {margin: 0 1em;}
 
 .page-title {
 	display:inline-block;
@@ -402,5 +421,21 @@ td > span{
 	&-alt {
 		background:$blue;
 	}
+}
+
+section ul {
+	margin:1em 0 0 4em;
+	padding:0;
+	list-style: disc;
+}
+
+section ul li {
+	list-style:disc;
+	padding: 0.5em 0;
+	margin-bottom: 0.25em;
+}
+
+section a {
+	color:$blue3;
 }
 

@@ -1,3 +1,3 @@
-	<?php include "_elements/header.html" ;?>
-	<?php include "_elements/home.html" ;?>
-	<?php include "_elements/footer.html" ;?>
+	<?php include "_elements/header.php" ;?>
+	<?php include "_elements/home.php" ;?>
+	<?php include "_elements/footer.php" ;?>

@@ -31,7 +31,7 @@
                 <img src="/img/acred-nwea.png" alt="NWEA Accreditation" id="NWEA">
             </div>
         </footer>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-	<script src="/js/min/script-min.js" type="text/javascript"></script>
+	<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script defer src="/js/min/script-min.js" type="text/javascript"></script>
     </body>
 </html>
