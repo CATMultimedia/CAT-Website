@@ -11,42 +11,31 @@ var menu = document.querySelector("nav.menu");
 
 function showMenu(){
     menu.className = "menu show";
+    document.body.classList.toggle("no-scroll");
+	// document.body.addEventListener("transitionend", afterTransition, true);//firefox
+	// document.body.addEventListener("webkitTransitionEnd", afterTransition, true);//chrome
+	function afterTransition(){
+	  document.body.classList.toggle("disable");
+	}
 }
 
 function hideMenu(){
+    document.body.classList.toggle("no-scroll");
     menu.className = "menu";
 }
 
 //DESKTOP FUNCTION
-function showInnerMenu(itemID){
-    var innerMenu = document.getElementById(itemID);
-    var allInnerMenus = document.querySelectorAll(".innerMenu");
-    for (var i=0; i < allInnerMenus.length; i++){
-        if (allInnerMenus[i].className === "innerMenu showMe" && allInnerMenus[i].id !== itemID){
-            allInnerMenus[i].className = "innerMenu";
-            break;
-        }
-    }
-    if (innerMenu.className === "innerMenu"){
-        innerMenu.className = "innerMenu showMe";
-    }
-    
-    else {
-        innerMenu.className = "innerMenu";
-    }
-}
-
 var quicklinkBtn = document.getElementById("quicklink");
 quicklinkBtn.addEventListener("click", showQL);
 
 function showQL() {
     var qll = document.querySelector("ul.quicklinks");
-    
+
     if (qll.className === "quicklinks"){
-        qll.className = "quicklinks expand";
+        qll.className = "quicklinks expand"; document.querySelector("#quicklink").style.color = "rgba(255, 255, 255, 0.7)";
     }
-    
+
     else {
-        qll.className = "quicklinks";
+        qll.className = "quicklinks"; document.querySelector("#quicklink").style.color = "white";
     }
 }
