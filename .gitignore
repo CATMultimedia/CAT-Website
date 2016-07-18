@@ -1,9 +1,4 @@
 *.codekit
 *.scssc
 google-api-php-client/
-<<<<<<< HEAD
 .sass-cache/
-=======
-.sass-cache/
-
->>>>>>> master
