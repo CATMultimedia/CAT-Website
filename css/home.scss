@@ -82,10 +82,10 @@
 	        border-bottom:0;
         }
 
-		&.evt-ech  {border-left-color:$orange;}
-		&.evt-es   {border-left-color:$teal;}
-		&.evt-hs   {border-left-color:$green;}
-		&.evt-all  {border-left-color:$blue3;}
+		&.evt-ech, &.evt-ec  {border-left-color:$orange;}
+		&.evt-ess, &.evt-es   {border-left-color:$teal;}
+		&.evt-hss, &.evt-hs   {border-left-color:$green;}
+		&.evt-cat, &.evt-all, &.evt-al, &.evt-ca   {border-left-color:$blue3;}
 
 
         .event-date {
@@ -260,11 +260,10 @@
             border-bottom: none;
             border-top: 12px solid $orange;
 
-			&.evt-ech  {border-top-color:$orange;}
-			&.evt-es   {border-top-color:$teal;}
-			&.evt-hs   {border-top-color:$green;}
-			&.evt-all  {border-top-color:$blue3;}
-
+			&.evt-ech, &.evt-ec  {border-top-color:$orange;}
+			&.evt-ess, &.evt-es   {border-top-color:$teal;}
+			&.evt-hss, &.evt-hs   {border-top-color:$green;}
+			&.evt-cat, &.evt-all, &.evt-al, &.evt-ca  {border-top-color:$blue3;}
         }
 
 
