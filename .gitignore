@@ -1,3 +1,5 @@
 *.codekit
 *.scssc
 google-api-php-client/
+.sass-cache/
+
