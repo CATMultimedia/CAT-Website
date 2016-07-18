@@ -43,6 +43,6 @@
     </section>
 </main>
 <?php
-	include "../_elements/footer.html";
+	include "../_elements/footer.php";
 
 ?>
