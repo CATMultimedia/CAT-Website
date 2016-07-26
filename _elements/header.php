@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="google-signin-client_id" content="628070934956-db3ugplt1u0iecgujqt2u7fd6jvoir7v.apps.googleusercontent.com">
         <title>Colegio Americano de Torreón <?php if (!empty($pagetitle)) { ?> - <?php echo $pagetitle; ?><?php } else { echo " - excellence for life";} ?></title>
         <link rel="stylesheet" href="/css/base.css" type="text/css">
+        <?php if ($signin == "log") {?> <script src="https://apis.google.com/js/platform.js" async defer></script> <?php }; ?>
 		<script async type="text/javascript">
 			WebFontConfig = {google:{ families:['Ubuntu:300,400,400italic,500,500italic,700,700italic:latin' ]}};(function(d) {var wf = d.createElement('script'), s = d.scripts[0];wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';s.parentNode.insertBefore(wf, s);})(document);
 		  </script>
@@ -34,7 +36,7 @@
                     <ul>
                         <li><a href="#"><span class="resourceImg icon-students"></span><br>Students</a></li>
                         <li><a href="#"><span class="resourceImg icon-parents"></span><br>Parents</a></li>
-                        <li><a href="#"><span class="resourceImg icon-faculty"></span><br>Faculty</a></li>
+                        <li><a href="/mycat/staff"><span class="resourceImg icon-faculty"></span><br>Faculty</a></li>
                         <li id="quicklink"><a href="#"><span class="resourceImg icon-quicklinks"></span><br>Quicklinks</a>
                         </li>
                     </ul>
