@@ -56,9 +56,8 @@ if( isset($_SESSION["gp_access_token"]) ){ // If logged in
 
     <section class="inside-supporting">
 		<aside class="aside">
-			<h1 class="aside-title">Hello <?php echo $first_name.' '.$last_name; ?>!</h1>
+			<h1 class="aside-title">Hello <?php echo $first_name.' '.$last_name; ?>!<img src="<?php echo $profile_image_link; ?>" class="aside-profile-img"></h1>
 			<section class="aside-content">
-				 <img src="<?php echo $profile_image_link; ?>">
 				 <p>Your Email: <?php echo $email; ?></p>
 				 <p><a href="/mycat/logout.php" class="btn">Logout</a></p>
 			</section>
