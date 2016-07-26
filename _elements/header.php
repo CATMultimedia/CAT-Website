@@ -10,7 +10,7 @@
 		<script async type="text/javascript">
 			WebFontConfig = {google:{ families:['Ubuntu:300,400,400italic,500,500italic,700,700italic:latin' ]}};(function(d) {var wf = d.createElement('script'), s = d.scripts[0];wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';s.parentNode.insertBefore(wf, s);})(document);
 		  </script>
-
+		  <?php if (!empty($specialhead)) { echo $specialhead;} ?>
     </head>
 
     <body <?php if (!empty($pagetitle)) { ?> class="not-home" <?php } ?>>
@@ -69,8 +69,9 @@
                         <li class="mainLink"><a href="javascript:;">About CAT</a>
                             <ul class="innerMenu" id="about">
                                 <li><a href="/about/directors-message">Director's Message</a></li>
-                                <li><a href="#">School Philosophy</a></li>
-                                <li><a href="#">Facilities</a></li>
+                                <li><a href="/about/school-philosophy">School Philosophy</a></li>
+                                <li><a href="/about/history">History</a></li>
+                                <li><a href="/about/facilities">Facilities</a></li>
                                 <li><a href="#">School Profile</a></li>
                             </ul>
                         </li>
