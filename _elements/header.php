@@ -72,16 +72,16 @@
                                 <li><a href="/about/school-philosophy">School Philosophy</a></li>
                                 <li><a href="/about/history">History</a></li>
                                 <li><a href="/about/facilities">Facilities</a></li>
-                                <li><a href="#">School Profile</a></li>
+                                <li><a href="/about/school-profile">School Profile</a></li>
                             </ul>
                         </li>
 
                         <li class="mainLink"><a href="javascript:;">Academics</a>
                             <ul class="innerMenu" id="academics">
-                                <li><a href="#">Early Childhood</a></li>
-                                <li><a href="#">Elementary</a></li>
-                                <li><a href="#">Intensive English</a></li>
-                                <li><a href="#">High School</a></li>
+                                <li><a href="/academics/early-childhood">Early Childhood</a></li>
+                                <li><a href="/academics/elementary">Elementary</a></li>
+                                <li><a href="/academics/intensive-english">Intensive English</a></li>
+                                <li><a href="/academics/high-school">High School</a></li>
                             </ul>
                         </li>
 

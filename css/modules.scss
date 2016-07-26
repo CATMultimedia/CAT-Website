@@ -300,19 +300,133 @@ $all: $blue3;
 	}
 }
 
-section ul {
-	margin:1em 0 0 4em;
+aside h2 {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+.inside-supporting ul {
+	margin:0.25em 0 0 1.5em;
 	padding:0;
 	list-style: disc;
 }
 
-section ul li {
+.inside-supporting ul li {
 	list-style:disc;
-	padding: 0.5em 0;
+	padding:0;
 	margin-bottom: 0.25em;
 }
 
+.inside-content ul {
+	margin:0.75em 0 0.75em 4em;
+	padding:0;
+	list-style: disc;
+}
+
+.inside-content ul li {
+	list-style:disc;
+	padding:0;
+	margin-bottom: 0.25em;
+}
+
+
 section a {
 	color:$blue3;
+}
+
+section a:visited {
+	color:$blue3;
+}
+
+.inside-content table {
+	display:inline-block;
+	margin:0 0 2em 2.5em;
+	vertical-align: top;
+    border-collapse: collapse;
+    border: 0;
+
+	&:nth-of-type(3n+1) thead {
+		background:$green;
+		}
+	&:nth-of-type(3n+2) thead {
+		background:$orange;
+	}
+	&:nth-of-type(3n+3) thead {
+		background:$teal;
+	}
+
+	td {
+		border: 0;
+	    padding: 5px 10px;
+	    font-size: 0.9em;
+
+	}
+
+	tr:nth-of-type(even) {
+	    background:#f6f6f6;
+	}
+
+
+	th {
+		border:0;
+		color:#fefefe;
+		font-weight:400;
+		padding:5px 10px;
+		text-align:left;
+	}
+
+	tfoot {
+		font-weight:600;
+	}
+
+}
+
+
+
+@media all and (min-width: 768px){
+	.hoverlist input {
+		display: none;
+	}
+
+	.hoverlist label {
+		cursor: pointer;
+		display: block;
+		margin-bottom: .125em;
+		padding: .25em 1em;
+		color:$blue3;
+	}
+
+	.hoverlist label:hover {
+		background: #ccc;
+	}
+
+	.hoverlist input:checked + label {
+		background: #CCC;
+		color: #333;
+		margin-bottom: 0;
+	}
+	.hoverlist .hoverlist-inside {
+		max-height:0px;
+		overflow:hidden;
+		transition: all 0.5s;
+	}
+
+	.hoverlist input:checked .hoverlist-inside {}
+	.hoverlist input:checked ~ .hoverlist-inside {
+		max-height: 1500px;
+		margin-bottom: .125em;
+		overflow:inherit;
+		transition: all 1s;
+	}
+
+    .hoverlist-inside li {
+	    list-style:disc;
+	    padding:0;
+	    margin:0 0 0 1.25em;
+    }
+
 }
 
