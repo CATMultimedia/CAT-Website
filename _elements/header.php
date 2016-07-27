@@ -56,10 +56,10 @@
                     <h2><span class="icon-quicklinks"> </span>Quicklinks</h2>
 
                     <ul class="quicklinks">
-                        <li><a class="mainLink ql">Gradebook</a></li>
-                        <li><a class="mainLink ql">Calendar</a></li>
-                        <li><a class="mainLink ql">Cathub</a></li>
-                        <li><a class="mainLink ql">Directory</a></li>
+                        <li><a class="mainLink ql" href="http://plusportals.com/cat" target="_blank">Gradebook</a></li>
+                        <li><a class="mainLink ql" href="/calendar">Calendar</a></li>
+                        <li><a class="mainLink ql" href="http://cathub.org" target="_blank">Cathub</a></li>
+                        <li><a class="mainLink ql" href="/directory">Directory</a></li>
                     </ul>
 <!--                    HIDDEN FOR DESKTOP END-->
 
