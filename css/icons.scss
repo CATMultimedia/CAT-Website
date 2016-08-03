@@ -27,7 +27,7 @@
 .icon-map:before {
     content: "\e900";
 }
-.icon-iphone:before {
+.icon-phone:before {
     content: "\e901";
 }
 .icon-email:before {
@@ -46,7 +46,7 @@
     content: "\e906";
     color: #CD201F;
 }
-.icon-twitter-square:before {
+.icon-twitter:before {
     content: "\e907";
     color: #75ACEE;
 }
@@ -60,7 +60,7 @@
 .icon-circle:before {
     content: "\e90a";
 }
-.icon-stack:before {
+.icon-quicklinks:before {
     content: "\e90b";
 }
 .icon-chevron-right:before {
@@ -68,6 +68,9 @@
 }
 .icon-chevron-left:before {
     content: "\e90d";
+}
+.icon-menu:before {
+    content: "\e911";
 }
 .icon-faculty:before {
     content: "\e90e";
@@ -78,4 +81,3 @@
 .icon-students:before {
     content: "\e910";
 }
-

@@ -1,0 +1,62 @@
+/*! CAT Website Redesign
+	- Document: CAT Website
+	- Version:  7.0.0-alpha.1
+	- Author:   CAT Multimedia Club
+*/
+
+$font-line-height: 1.5em !default;
+$font-base-size: 1rem !default;
+$news-img-width: 1200px;
+$news-img-height: 600px;
+
+
+$red: #BA0000;
+$red2: #A03030;
+$blue: #0A1A6A;
+$blue2: #202C6C;
+$blue3: #366CAC;
+$teal: #026161;
+$orange: #EC8412;
+$green: #659603;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {font:17px/18px Ubuntu;}
+
+/*Normalizing*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*END*/
+
+
+@import 'icons';
+@import 'header';
+@import 'home';
+@import 'modules';
+@import 'footer';
