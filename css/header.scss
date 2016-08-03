@@ -43,12 +43,18 @@
 		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8));
 	    width: 100%;
 	    position: absolute;
-	    height: 115%;
+	    height: 108%;
 	    top: 0;
 	    left: 0;
 	    z-index:0;
 	}
 
+}
+
+.not-home .logo {
+	&:before {
+		height:115%;
+	}
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -82,7 +88,11 @@
     }
 
 	.not-home {
-		.logo {padding-bottom:10em}
+		.logo {
+			padding-bottom:10em;
+
+			&:before { height:100%; }
+		}
 	}
 }
 

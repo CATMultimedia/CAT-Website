@@ -69,7 +69,6 @@ $all: $blue3;
 	}
 
 }
-
 @media all and (min-width: 768px){
 	.article {
 		margin:0 2em 1em 2em;
@@ -103,8 +102,6 @@ $all: $blue3;
 		}
 	}
 }
-
-
 .news-previous-list, .news-archives-list {margin: 0 1em;}
 
 .page-title {
@@ -120,9 +117,6 @@ $all: $blue3;
 	clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%);
 	border:0;
 }
-
-
-
 .page-subtitle {
 	color:$red;
 	font-size:1.65em;
@@ -132,7 +126,6 @@ $all: $blue3;
 	font-style: italic;
 
 }
-
 @media all and (min-width: 768px){
 	.page-title {
 		margin:-2em 0 -2em -1vw;
@@ -193,8 +186,6 @@ $all: $blue3;
 	}
 
 }
-
-
 .aside {
 	background:#eee;
 	margin:1em;
@@ -230,7 +221,6 @@ $all: $blue3;
 		background:$teal;
 	}
 }
-
 .aside-profile-img {    float: right;
     bottom: 0;
     margin-top: -75px;
@@ -253,7 +243,6 @@ $all: $blue3;
 	}
 
 }
-
 .image {
 	background:#eee;
 	margin:1em;
@@ -274,7 +263,6 @@ $all: $blue3;
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
 	}
 }
-
 .btn, a.btn {
 	background:$red;
 	color:#fefefe;
@@ -300,7 +288,6 @@ $all: $blue3;
 		background:$blue;
 	}
 }
-
 aside h2 {
     font-size: 1.25em;
     font-weight: 500;
@@ -308,44 +295,38 @@ aside h2 {
     margin: 0;
     padding: 0;
 }
-
 .inside-supporting ul {
 	margin:0.25em 0 0 1.5em;
 	padding:0;
 	list-style: disc;
 }
-
 .inside-supporting ul li {
 	list-style:disc;
 	padding:0;
 	margin-bottom: 0.25em;
 }
-
 .inside-content ul {
 	margin:0.75em 0 0.75em 6em;
 	padding:0;
 	list-style: disc;
 }
-
 .inside-content ul li {
 	list-style:disc;
 	padding:0;
 	margin-bottom: 0.5em;
 }
-
-
 section a {
 	color:$blue3;
 
 
-section a:visited {
-	color:$blue3;
-}
+	section a:visited {
+		color:$blue3;
+	}
 
-.btn:visited {
-	color:#fefefe;
+	.btn:visited {
+		color:#fefefe;
+	}
 }
-
 .inside-content table {
 	display:inline-block;
 	margin:0 0 2em 2.5em;
@@ -432,6 +413,4 @@ section a:visited {
 	    padding:0;
 	    margin:0 0 0 1.25em;
     }
-
 }
-
