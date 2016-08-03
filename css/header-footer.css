@@ -33,7 +33,6 @@ a, a:visited {
 h3 {
     text-align: left;
 }
-/*END*/
 
 .topHeader {
     display: flex;
@@ -122,7 +121,7 @@ h3 {
     height: 100vh;
     overflow-y: scroll;
     top: 0;
-    left: 100vw;
+    left: 101vw;
     transition: left 0.3s ease-in-out;
     z-index: 3;
 }
@@ -235,7 +234,7 @@ h3 {
 }
 
 .mainLink.ql{
-    width: 50vw;
+    width: 49vw;
     font-size: 1.1em;
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
     padding: 1em;
@@ -483,4 +482,62 @@ h3 {
     z-index: 0;
     height: 50em;
     background: whitesmoke;
+}
+
+footer {
+    background: #232323;
+    display: flex;
+    color: #B2B2B2;
+    flex-flow: row;
+    align-items: center;
+    padding: 1.5em 1em;
+    justify-content: center; /*Would Change to "space-between for desktop"*/
+}
+
+.footLeft {
+    display: flex;
+    flex-direction: row-reverse; /*changes to row for desktop*/
+    width: 100%; /*Changes to AUTO for desktop*/
+    justify-content: space-between; /*Changes to flex-start for desktop*/
+    font-size: 0.7em;
+}
+
+.footLeft:not(strong){
+    font-weight: 400;
+}
+
+.footLeft > img, .footLeft div {
+    margin-right: 1.5em;
+}
+
+#logo-inv, #SEP, #advancED, #SACS, #NWEA {
+    height: 5em;
+    vertical-align: middle;
+}
+
+/*Hidden for mobile view*/
+.footRight,  .footLeft div:nth-child(3){
+    display: none;
+}
+
+@media all and (min-width: 945px){
+    .footLeft div:nth-child(3) {
+        display: block;
+    }
+}
+
+@media all and (min-width: 768px){
+    footer {
+        justify-content: space-between;
+    }
+    
+    .footLeft{
+        flex-direction: row;
+        width: auto;
+        justify-content: flex-start;
+    }
+    
+    .footRight {
+        display: block;    
+    }
 }
