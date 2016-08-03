@@ -1,4 +1,3 @@
-<<<<<<< HEAD:_elements/footer.html
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,8 +8,6 @@
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300' rel='stylesheet' type='text/css'>
     </head>
     <body>
-=======
->>>>>>> master:_elements/footer.php
         <footer class="pie">
             <div class="footLeft">
                 <img id="logo-inv" src="/img/logo-inv.png" alt="Colegio Americano de Torreón">
