@@ -9,175 +9,8 @@ $all: $blue3;
 
 
 .btn {font-family:Ubuntu;}
-
-.eventscal {
-	display:flex;
-	flex-flow:row wrap;
-	justify-content: center;
-	max-height:22em;
-}
-
-.cal{
-	padding: 10px;
-	padding: 10px;
-	color: #9d9d9d;
-	flex-grow:1;
-}
-
-.cal caption{
-	color: #fefefe;
-	background:$red;
-	margin: 0; padding:0.65em 1em 0 1em;
-	text-align: justify;
-	font-size:1.5em;
-
-	span, a{
-		display: inline-block;
-		font-weight: 200;
-		text-align: center;
-		color:#fefefe;
-		text-decoration:none;
-	}
-
-	&::after{
-		content: '\00A0';
-		display: inline-block;
-		width: 100%;
-	}
-}
-
-.cal-weekdays {
-	font-weight: normal;
-	font-size: 1.25em;
-	color:$red2;
-}
-
-td{
-	font-weight: normal;
-	text-align: center;
-
-	&.cal-today span {
-		background: lighten($red,40);
-		border-radius: 30px;
-		color:#fefefe;
-		font-weight:600;
-	}
-
-}
-
-
-td > span{
-	display: inline-block;
-	text-align: center;
-	padding: 0.65em; margin: 0px;
-	min-width:1.15em;
-	border:4px solid transparent;
-
-	&:hover {
-		background:#eee;
-		border-radius:30px;
-	}
-
-	&.evt-ech {
-		border: 4px solid $orange;
-		border-radius: 30px;
-	}
-
-	&.evt-es {
-		border: 4px solid $teal;
-		border-radius: 30px;
-	}
-
-	&.evt-hs {
-		border: 4px solid $green;
-		border-radius: 30px;
-	}
-
-	&.evt-all {
-		border: 4px solid $blue3;
-		border-radius: 30px;
-	}
-
-}
-
-.cal-sched{
-	flex-grow:0;
-	max-height:22em;
-	overflow-x:scroll;
-	margin: 0;
-	background:#ddd;
-	padding:0 3em 0 0;
-}
-
-.cal-sched-list{
-	padding: 20px;
-	margin-left: 40px;
-	border-left: 2px solid #aaa;
-	color:#fefefe;
-	display: block;
-}
-
-.cal-sched-item {
-	display: block;
-	margin-bottom:5px;
-	padding: 0;
-	clear: both;
-	min-height: 100px;
-	overflow: visible;
-
-	&:last-child{
-		margin-bottom: 5px;
-		min-height: 30px;
-	}
-
-	&.evt-ech .cal-sched-meta {border-color:$orange;}
-	&.evt-es .cal-sched-meta {border-color:$teal;}
-	&.evt-hs .cal-sched-meta {border-color:$green;}
-	&.evt-all .cal-sched-meta {border-color:$blue3;}
-
-	.cal-sched-meta {
-		display: block;
-		float: left;
-		margin-left: -50px;
-		width: 50px; height: 50px;
-		border: 4px solid #ccc;
-		background:#fefefe;
-		color:$blue;
-		border-radius: 40px;
-		text-align: center;
-		padding: 0px;
-
-		.cal-sched-date {
-			font-size: 1.6em;
-			font-weight:900;
-			margin-top:10px;
-			margin-bottom:-3px;
-			display: block;
-		}
-
-		.cal-sched-time {
-			font-size:0.75em;
-			font-weight:300;
-		}
-	}
-
-	.cal-sched-desc{
-		display: block;
-		float: left;
-		margin-top:10px;
-		margin-left:1em;
-		overflow: visible;
-		color:$blue;
-
-		h1 {font-size:1.25em; margin:0;}
-		p {
-			font-size:0.75em;
-			margin: 0;
-			color:$blue3;
-		}
-	}
-}
-
+.cal {margin-left: 2em;}
+.cal-agenda {margin-top:0.5em;}
 
 .article {
 	padding:0 0.5em 0.5em;
@@ -354,8 +187,9 @@ td > span{
 	}
 
 	@media all and (min-width: 768px){
-		p {padding:0.5em 2.5em; font-size:1em; line-height:1.75em; font-weight:400;}
+		p {padding:0.5em 4.5em; font-size:1em; line-height:1.75em; font-weight:400;}
 		blockquote {width:400px;}
+		h2,h3,h4,h5,h6 {padding-left:2.5em;}
 	}
 
 }
@@ -397,7 +231,13 @@ td > span{
 	}
 }
 
+.aside-profile-img {    float: right;
+    bottom: 0;
+    margin-top: -75px;
+    margin-right: -35px;
+    border-radius: 100px;}
 .aside-picture {background:none; width:auto; text-align: center;}
+.aside-picture img {max-width:100%;}
 
 .image-single {
 	max-width: 100%;
@@ -435,7 +275,7 @@ td > span{
 	}
 }
 
-.btn {
+.btn, a.btn {
 	background:$red;
 	color:#fefefe;
 	font-size:1em;
@@ -461,19 +301,137 @@ td > span{
 	}
 }
 
-section ul {
-	margin:1em 0 0 4em;
+aside h2 {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+.inside-supporting ul {
+	margin:0.25em 0 0 1.5em;
 	padding:0;
 	list-style: disc;
 }
 
-section ul li {
+.inside-supporting ul li {
 	list-style:disc;
-	padding: 0.5em 0;
+	padding:0;
 	margin-bottom: 0.25em;
 }
 
+.inside-content ul {
+	margin:0.75em 0 0.75em 6em;
+	padding:0;
+	list-style: disc;
+}
+
+.inside-content ul li {
+	list-style:disc;
+	padding:0;
+	margin-bottom: 0.5em;
+}
+
+
 section a {
 	color:$blue3;
+}
+
+section a:visited {
+	color:$blue3;
+}
+
+.btn:visited {
+	color:#fefefe;
+}
+
+.inside-content table {
+	display:inline-block;
+	margin:0 0 2em 2.5em;
+	vertical-align: top;
+    border-collapse: collapse;
+    border: 0;
+
+	&:nth-of-type(3n+1) thead {
+		background:$green;
+		}
+	&:nth-of-type(3n+2) thead {
+		background:$orange;
+	}
+	&:nth-of-type(3n+3) thead {
+		background:$teal;
+	}
+
+	td {
+		border: 0;
+	    padding: 5px 10px;
+	    font-size: 0.9em;
+
+	}
+
+	tr:nth-of-type(even) {
+	    background:#f6f6f6;
+	}
+
+
+	th {
+		border:0;
+		color:#fefefe;
+		font-weight:400;
+		padding:5px 10px;
+		text-align:left;
+	}
+
+	tfoot {
+		font-weight:600;
+	}
+
+}
+
+
+
+@media all and (min-width: 768px){
+	.hoverlist input {
+		display: none;
+	}
+
+	.hoverlist label {
+		cursor: pointer;
+		display: block;
+		margin-bottom: .125em;
+		padding: .25em 1em;
+		color:$blue3;
+	}
+
+	.hoverlist label:hover {
+		background: #ccc;
+	}
+
+	.hoverlist input:checked + label {
+		background: #CCC;
+		color: #333;
+		margin-bottom: 0;
+	}
+	.hoverlist .hoverlist-inside {
+		max-height:0px;
+		overflow:hidden;
+		transition: all 0.5s;
+	}
+
+	.hoverlist input:checked .hoverlist-inside {}
+	.hoverlist input:checked ~ .hoverlist-inside {
+		max-height: 1500px;
+		margin-bottom: .125em;
+		overflow:inherit;
+		transition: all 1s;
+	}
+
+    .hoverlist-inside li {
+	    list-style:disc;
+	    padding:0;
+	    margin:0 0 0 1.25em;
+    }
+
 }
 

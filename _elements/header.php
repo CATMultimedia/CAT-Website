@@ -3,12 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="google-signin-client_id" content="628070934956-db3ugplt1u0iecgujqt2u7fd6jvoir7v.apps.googleusercontent.com">
         <title>Colegio Americano de Torreón <?php if (!empty($pagetitle)) { ?> - <?php echo $pagetitle; ?><?php } else { echo " - excellence for life";} ?></title>
         <link rel="stylesheet" href="/css/base.css" type="text/css">
+        <?php if ($signin == "log") {?> <script src="https://apis.google.com/js/platform.js" async defer></script> <?php }; ?>
 		<script async type="text/javascript">
 			WebFontConfig = {google:{ families:['Ubuntu:300,400,400italic,500,500italic,700,700italic:latin' ]}};(function(d) {var wf = d.createElement('script'), s = d.scripts[0];wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';s.parentNode.insertBefore(wf, s);})(document);
 		  </script>
-
+		  <?php if (!empty($specialhead)) { echo $specialhead;} ?>
     </head>
 
     <body <?php if (!empty($pagetitle)) { ?> class="not-home" <?php } ?>>
@@ -34,7 +36,7 @@
                     <ul>
                         <li><a href="#"><span class="resourceImg icon-students"></span><br>Students</a></li>
                         <li><a href="#"><span class="resourceImg icon-parents"></span><br>Parents</a></li>
-                        <li><a href="#"><span class="resourceImg icon-faculty"></span><br>Faculty</a></li>
+                        <li><a href="/mycat/staff"><span class="resourceImg icon-faculty"></span><br>Faculty</a></li>
                         <li id="quicklink"><a href="#"><span class="resourceImg icon-quicklinks"></span><br>Quicklinks</a>
                         </li>
                     </ul>
@@ -67,18 +69,19 @@
                         <li class="mainLink"><a href="javascript:;">About CAT</a>
                             <ul class="innerMenu" id="about">
                                 <li><a href="/about/directors-message">Director's Message</a></li>
-                                <li><a href="#">School Philosophy</a></li>
-                                <li><a href="#">Facilities</a></li>
-                                <li><a href="#">School Profile</a></li>
+                                <li><a href="/about/school-philosophy">School Philosophy</a></li>
+                                <li><a href="/about/history">History</a></li>
+                                <li><a href="/about/facilities">Facilities</a></li>
+                                <li><a href="/about/school-profile">School Profile</a></li>
                             </ul>
                         </li>
 
                         <li class="mainLink"><a href="javascript:;">Academics</a>
                             <ul class="innerMenu" id="academics">
-                                <li><a href="#">Early Childhood</a></li>
-                                <li><a href="#">Elementary</a></li>
-                                <li><a href="#">Intensive English</a></li>
-                                <li><a href="#">High School</a></li>
+                                <li><a href="/academics/early-childhood">Early Childhood</a></li>
+                                <li><a href="/academics/elementary">Elementary</a></li>
+                                <li><a href="/academics/intensive-english">Intensive English</a></li>
+                                <li><a href="/academics/high-school">High School</a></li>
                             </ul>
                         </li>
 

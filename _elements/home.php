@@ -9,7 +9,7 @@
                     <h1>Next Events</h1>
                 </div>
                 	<?php include "get-calendars.php"; ?>
-                <a href="#" class="events-more">
+                <a href="/calendar" class="events-more">
                     <div>
                         <h1>See All Events</h1>
                         <i class="icon-chevron-double"></i>

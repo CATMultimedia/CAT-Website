@@ -10,17 +10,9 @@ $green: #659603;
 $news-img-width: 1200px;
 $news-img-height: 600px;
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font: 17px/18px Ubuntu, sans-serif;
-}
-
 .news {
+    margin-bottom: -5px;
+
     .news-content {
         padding: 30px 20px 70px 20px;
 
@@ -81,6 +73,7 @@ html {
     .events-header {
         padding: 20px;
         background-color: $blue;
+        z-index:10;
 
         h1 {
             text-transform: uppercase;
@@ -96,6 +89,16 @@ html {
         border-bottom: 1px solid lightgray;
         color: $blue;
         padding: 20px;
+
+        &:last-of-type {
+	        border-bottom:0;
+        }
+
+		&.evt-ech, &.evt-ec  {border-left-color:$orange;}
+		&.evt-ess, &.evt-es   {border-left-color:$teal;}
+		&.evt-hss, &.evt-hs   {border-left-color:$green;}
+		&.evt-cat, &.evt-all, &.evt-al, &.evt-ca   {border-left-color:$blue3;}
+
 
         .event-date {
             font-size: 3.5em;
@@ -139,11 +142,13 @@ html {
 
     .events-more {
         text-decoration: none;
+        z-index:9;
 
         div {
             background-color: $red;
             padding: 20px;
             text-align: right;
+            margin-top: 1px;
 
             h1, .icon-chevron-double {
                 font-size: 1.5em;
@@ -266,7 +271,13 @@ html {
             border-left: none;
             border-bottom: none;
             border-top: 12px solid $orange;
+
+			&.evt-ech, &.evt-ec  {border-top-color:$orange;}
+			&.evt-ess, &.evt-es   {border-top-color:$teal;}
+			&.evt-hss, &.evt-hs   {border-top-color:$green;}
+			&.evt-cat, &.evt-all, &.evt-al, &.evt-ca  {border-top-color:$blue3;}
         }
+
 
         .events-more {
             flex: 1 1 25%;
