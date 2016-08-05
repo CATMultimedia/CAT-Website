@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/header-footer.css">
-        <title>Footer</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
         <footer class="pie">
             <div class="footLeft">
                 <img id="logo-inv" src="/img/logo-inv.png" alt="Colegio Americano de Torreón">
