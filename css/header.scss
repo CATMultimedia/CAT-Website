@@ -1,3 +1,13 @@
+
+$red: #BA0000;
+$red2: #A03030;
+$blue: #0A1A6A;
+$blue2: #202C6C;
+$blue3: #366CAC;
+$teal: #026161;
+$orange: #EC8412;
+$green: #659603;
+
 .topHeader {
     display: flex;
     position: relative;
@@ -236,9 +246,9 @@
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 700;
-    border-bottom: 2px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
     display: inline-block;
-    padding: 1em;
+    padding: 1em 0 0 0;
     margin: 0em;
     box-sizing: border-box;
     cursor: pointer;
@@ -309,8 +319,50 @@
 }
 
 .innerMenu {
-    max-height: 0;
     overflow-y: hidden;
+    max-height: 0;
+    font-weight: 300;
+    font-size: 0.9em;
+    margin: 0.5em 0 0 0;
+    border-top: 1px solid #f5f5f5;
+    
+    
+}
+
+.accordion {
+    background: transparentize($red, 0.2);
+    color: white;
+    
+    a {
+        color:white;
+    }
+    
+    .innerMenu {
+        background: white;
+        max-height: 15em;
+        
+        a {
+            color:$red;
+        }
+    }
+}
+
+
+.innerMenu.accordion {
+    
+}
+
+.innerMenu li {
+    padding: 0.3em 0;
+    text-transform: uppercase;
+    font-size:1em;
+    font-weight: 400;
+    border-bottom: 1px solid #F5F5F5;
+    padding: 1em;
+    margin: 0em;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 10;
 }
 
 @media all and (min-width: 768px){
@@ -420,7 +472,7 @@
 
     .mainLink:hover .innerMenu {
         overflow-y: visible;
-        padding: 0.9em 0;
+        padding: 0.9em;
         top: 2.05em;
         max-height: 2em;
         opacity: 1;

@@ -15,7 +15,7 @@ function showMenu(){
 	// document.body.addEventListener("transitionend", afterTransition, true);//firefox
 	// document.body.addEventListener("webkitTransitionEnd", afterTransition, true);//chrome
 	function afterTransition(){
-	  document.body.classList.toggle("disable");
+        document.body.classList.toggle("disable");
 	}
 }
 
@@ -39,3 +39,8 @@ function showQL() {
         qll.className = "quicklinks"; document.querySelector("#quicklink").style.color = "white";
     }
 }
+
+$('ul li a').click(function() {
+    $('.innerMenu li.current').removeClass('accordion');
+    $(this).closest('li').addClass('accordion');
+});
