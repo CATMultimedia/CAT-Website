@@ -85,7 +85,7 @@
                             </ul>
                         </li>
 
-                        <li class="mainLink" ><a href="javascript:;">Campus Life</a>
+                        <li class="mainLink"><a href="javascript:;">Campus Life</a>
                             <ul class="innerMenu" id="campusLife">
                                 <li><a href="#">Library</a></li>
                                 <li><a href="#">Sports</a></li>

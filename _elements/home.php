@@ -8,7 +8,7 @@
                 <div class="events-header">
                     <h1>Next Events</h1>
                 </div>
-                	<?php include "get-calendars.php"; ?>
+                	<?php // include "get-calendars.php"; ?>
                 <a href="/calendar" class="events-more">
                     <div>
                         <h1>See All Events</h1>
