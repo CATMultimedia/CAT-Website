@@ -262,6 +262,12 @@ $green: #659603;
         padding: 0.5em;
         margin: 0 1.1em;
         border: 0;
+        top:1.8em;
+    }
+
+    .innerMenu li {
+	    border-bottom:0;
+	    padding:0;
     }
 
 }
@@ -325,22 +331,22 @@ $green: #659603;
     font-size: 0.9em;
     margin: 0.5em 0 0 0;
     border-top: 1px solid #f5f5f5;
-    
-    
+
+
 }
 
 .accordion {
     background: transparentize($red, 0.2);
     color: white;
-    
+
     a {
         color:white;
     }
-    
+
     .innerMenu {
         background: white;
         max-height: 15em;
-        
+
         a {
             color:$red;
         }
@@ -349,7 +355,7 @@ $green: #659603;
 
 
 .innerMenu.accordion {
-    
+
 }
 
 .innerMenu li {
