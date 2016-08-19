@@ -6,7 +6,7 @@
                         <div itemprop="name"><strong>Colegio Americano de Torreón</strong></div>
                     </a>
                     <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="streetAddress">Colegio Americano de Torreón <br> Paseo del Algodón 500 <br> Fracc. Los Viñedos</span><br>
+                        <span itemprop="streetAddress">Paseo del Algodón 500 <br> Fracc. Los Viñedos</span><br>
                     </div>
                 </div>
 
