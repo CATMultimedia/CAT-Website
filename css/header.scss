@@ -265,11 +265,6 @@ $green: #659603;
         top:1.8em;
     }
 
-    .innerMenu li {
-	    border-bottom:0;
-	    padding:0;
-    }
-
 }
 
 .mainLink:not(.ql){
@@ -339,10 +334,6 @@ $green: #659603;
     background: transparentize($red, 0.2);
     color: white;
 
-    a {
-        color:white;
-    }
-
     .innerMenu {
         background: white;
         max-height: 15em;
@@ -353,9 +344,8 @@ $green: #659603;
     }
 }
 
-
-.innerMenu.accordion {
-
+.mainLink.accordion {
+	color:white;
 }
 
 .innerMenu li {
@@ -474,14 +464,24 @@ $green: #659603;
         max-height: 0;
         overflow-y: hidden;
         transition: all 0.5s;
+        border:0;
     }
 
     .mainLink:hover .innerMenu {
         overflow-y: visible;
         padding: 0.9em;
-        top: 2.05em;
+        top: 2.3em;
         max-height: 2em;
         opacity: 1;
+    }
+
+    .innerMenu {
+	    margin:0;
+    }
+
+    .innerMenu li {
+	    border-bottom:0;
+	    padding:0;
     }
 
 
@@ -519,7 +519,7 @@ $green: #659603;
 	#about::after, #academics::after, #campusLife::after, #joinUs::after {
 	    content: "";
 	    width: 100%;
-	    height: 25px;
+	    height: 55px;
 	    background: transparent;
 	    position: absolute;
 	    z-index: 0;

@@ -9,7 +9,7 @@
   padding: 0; }
 
 html {
-  font: 17px/18px Ubuntu; }
+  font: 17px/18px Ubuntu, sans-serif; }
 
 /*Normalizing*/
 body {
@@ -309,11 +309,7 @@ a, a:visited {
     padding: 0.5em;
     margin: 0 1.1em;
     border: 0;
-    top: 1.8em; }
-
-  .innerMenu li {
-    border-bottom: 0;
-    padding: 0; } }
+    top: 1.8em; } }
 .mainLink:not(.ql) {
   width: 100vw;
   color: #BA0000;
@@ -365,13 +361,14 @@ a, a:visited {
 .accordion {
   background: rgba(186, 0, 0, 0.8);
   color: white; }
-  .accordion a {
-    color: white; }
   .accordion .innerMenu {
     background: white;
     max-height: 15em; }
     .accordion .innerMenu a {
       color: #BA0000; }
+
+.mainLink.accordion {
+  color: white; }
 
 .innerMenu li {
   padding: 0.3em 0;
@@ -476,14 +473,22 @@ a, a:visited {
     z-index: -10;
     max-height: 0;
     overflow-y: hidden;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    border: 0; }
 
   .mainLink:hover .innerMenu {
     overflow-y: visible;
     padding: 0.9em;
-    top: 2.05em;
+    top: 2.3em;
     max-height: 2em;
     opacity: 1; }
+
+  .innerMenu {
+    margin: 0; }
+
+  .innerMenu li {
+    border-bottom: 0;
+    padding: 0; }
 
   #about::before, #academics::before, #campusLife::before, #joinUs::before {
     content: "";
@@ -514,7 +519,7 @@ a, a:visited {
   #about::after, #academics::after, #campusLife::after, #joinUs::after {
     content: "";
     width: 100%;
-    height: 25px;
+    height: 55px;
     background: transparent;
     position: absolute;
     z-index: 0;
@@ -752,6 +757,9 @@ a, a:visited {
 .cal-agenda {
   margin-top: 0.5em; }
 
+.align-right {
+  text-align: right; }
+
 .article {
   padding: 0 0.5em 0.5em;
   border-bottom: 1px solid #ccc;
@@ -822,7 +830,7 @@ a, a:visited {
   display: inline-block;
   left: 0;
   background: #A00000;
-  padding: 0 3em 0 4vw;
+  padding: 0 1em 0 4vw;
   font-size: 2em;
   line-height: 1.75em;
   color: #fefefe;
@@ -852,7 +860,7 @@ a, a:visited {
       flex-basis: 30%;
       margin-top: 5.5em; } }
 .content {
-  margin: 2em 0; }
+  margin: 1em 0; }
   .content h1, .content h2, .content h3, .content h4, .content h5 {
     font-weight: 500;
     margin-top: 0;
@@ -906,6 +914,8 @@ a, a:visited {
       border-right: 4px solid #A03030;
       float: right; }
   @media all and (min-width: 768px) {
+    .content .content {
+      margin: 2em 0; }
     .content p {
       padding: 0.5em 4.5em;
       font-size: 1em;
@@ -914,7 +924,11 @@ a, a:visited {
     .content blockquote {
       width: 400px; }
     .content h2, .content h3, .content h4, .content h5, .content h6 {
-      padding-left: 2.5em; } }
+      padding-left: 2.5em;
+      clear: both; }
+    .content embed, .content iframe {
+      margin-left: 2.5em;
+      max-width: 93%; } }
 
 .aside {
   background: #eee;
@@ -957,13 +971,18 @@ a, a:visited {
 
 .image-single {
   max-width: 100%; }
-  .image-single:nth-of-type(even) {
-    -webkit-clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%); }
-  .image-single:nth-of-type(odd) {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%); }
 
+@media all and (min-width: 768px) {
+  .image-single {
+    margin: 1em;
+    padding: 0.2em;
+    border: 1px solid #888;
+    border-radius: 10px; }
+    .image-single:nth-of-type(even) {
+      float: left;
+      margin-left: 3.5em; }
+    .image-single:nth-of-type(odd) {
+      float: right; } }
 .image {
   background: #eee;
   margin: 1em; }
@@ -1006,6 +1025,8 @@ aside h2 {
   margin: 0.25em 0 0 1.5em;
   padding: 0;
   list-style: disc; }
+  .inside-supporting ul ul {
+    margin: 0.25em 0 0 0; }
 
 .inside-supporting ul li {
   list-style: disc;
@@ -1013,7 +1034,7 @@ aside h2 {
   margin-bottom: 0.25em; }
 
 .inside-content ul {
-  margin: 0.75em 0 0.75em 6em;
+  margin: 0.75em 0 0.75em 3em;
   padding: 0;
   list-style: disc; }
 
@@ -1021,13 +1042,6 @@ aside h2 {
   list-style: disc;
   padding: 0;
   margin-bottom: 0.5em; }
-
-section a {
-  color: #366CAC; }
-  section a section a:visited {
-    color: #366CAC; }
-  section a .btn:visited {
-    color: #fefefe; }
 
 .inside-content table {
   display: inline-block;
@@ -1060,41 +1074,81 @@ section a {
 
 @media all and (min-width: 768px) {
   .inside-content table {
-    margin: 0 0 2em 2.5em; } }
-@media all and (min-width: 768px) {
-  .hoverlist input {
-    display: none; }
+    margin: 0 0 2em 2.5em; }
 
-  .hoverlist label {
-    cursor: pointer;
-    display: block;
-    margin-bottom: .125em;
-    padding: .25em 1em;
-    color: #366CAC; }
+  .inside-content ul {
+    margin: 0.75em 0 0.75em 6em; } }
+.hoverlist input {
+  display: none; }
 
-  .hoverlist label:hover {
-    background: #ccc; }
+.hoverlist label {
+  cursor: pointer;
+  display: block;
+  margin-bottom: .125em;
+  padding: .25em 1em;
+  color: #366CAC; }
 
-  .hoverlist input:checked + label {
-    background: #CCC;
-    color: #333;
-    margin-bottom: 0; }
+.hoverlist label:hover {
+  background: #ccc; }
 
-  .hoverlist .hoverlist-inside {
-    max-height: 0px;
-    overflow: hidden;
-    transition: all 0.5s; }
+.hoverlist input:checked + label {
+  background: #CCC;
+  color: #333;
+  margin-bottom: 0; }
 
-  .hoverlist input:checked ~ .hoverlist-inside {
-    max-height: 1500px;
-    margin-bottom: .125em;
-    overflow: inherit;
-    transition: all 1s; }
+.hoverlist .hoverlist-inside {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s; }
 
-  .hoverlist-inside li {
-    list-style: disc;
-    padding: 0;
-    margin: 0 0 0 1.25em; } }
+.hoverlist input:checked ~ .hoverlist-inside {
+  max-height: 1500px;
+  margin-bottom: .125em;
+  overflow: inherit;
+  transition: all 1s; }
+
+.hoverlist-inside li {
+  list-style: disc;
+  padding: 0;
+  margin: 0 0 0 1.25em; }
+
+.portal-logout {
+  float: right;
+  margin-top: -0.75em;
+  margin-right: -1.5em; }
+
+.portal-icon img {
+  width: 38px;
+  margin-right: 0.75em; }
+.portal-icon a:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.15em 0.75em;
+  border-radius: 10px;
+  color: #fefefe;
+  margin-left: -60px;
+  margin-top: 40px; }
+
+ul.no-ball {
+  list-style: none; }
+
+li.no-ball {
+  list-style-type: none !important;
+  padding-left: 0;
+  margin-left: 0.25em; }
+
+li.asterisk {
+  font-size: 0.9em;
+  font-weight: 300; }
+
+section a {
+  color: #366CAC; }
+section a:visited {
+  color: #306099; }
+section .btn:visited {
+  color: #fefefe; }
+
 footer {
   background: #232323;
   display: flex;

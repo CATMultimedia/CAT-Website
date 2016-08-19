@@ -11,6 +11,7 @@ $all: $blue3;
 .btn {font-family:Ubuntu;}
 .cal {margin-left: 2em;}
 .cal-agenda {margin-top:0.5em;}
+.align-right {text-align: right;}
 
 .article {
 	padding:0 0.5em 0.5em;
@@ -108,7 +109,7 @@ $all: $blue3;
 	display:inline-block;
 	left:0;
 	background:$red;
-	padding:0 3em 0 4vw;
+	padding: 0 1em 0 4vw;
 	font-size:2em;
 	line-height:1.75em;
 	color:#fefefe;
@@ -127,6 +128,7 @@ $all: $blue3;
 
 }
 @media all and (min-width: 768px){
+
 	.page-title {
 		margin:-2em 0 -2em -1vw;
 	}
@@ -146,7 +148,7 @@ $all: $blue3;
 }
 
 .content {
-	margin: 2em 0;
+	margin: 1em 0;
 
 	h1, h2, h3, h4, h5 {font-weight:500; margin-top:0; padding:0 0 0 1.5vw;}
 	h1 {font-size:1.75em;line-height:1.5em; padding:0 5em 0 1.5vw; color:$blue; border-bottom:4px solid $blue;display:inline-block;}
@@ -180,9 +182,11 @@ $all: $blue3;
 	}
 
 	@media all and (min-width: 768px){
+		.content {margin:2em 0;}
 		p {padding:0.5em 4.5em; font-size:1em; line-height:1.75em; font-weight:400;}
 		blockquote {width:400px;}
-		h2,h3,h4,h5,h6 {padding-left:2.5em;}
+		h2,h3,h4,h5,h6 {padding-left:2.5em; clear: both;}
+		embed, iframe { margin-left: 2.5em; max-width:93%;}
 	}
 
 }
@@ -231,16 +235,27 @@ $all: $blue3;
 
 .image-single {
 	max-width: 100%;
+}
+
+@media all and (min-width: 768px){
+    .image-single {
+	margin: 1em;
+    padding: 0.2em;
+    border: 1px solid #888;
+    border-radius: 10px;
 
 	&:nth-of-type(even) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);
+		float:left;
+		margin-left:3.5em;
 	}
 
 	&:nth-of-type(odd) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
+		float:right;
 	}
+
+}
+
+
 
 }
 .image {
@@ -299,6 +314,10 @@ aside h2 {
 	margin:0.25em 0 0 1.5em;
 	padding:0;
 	list-style: disc;
+
+	ul {
+		margin:0.25em 0 0 0;
+	}
 }
 .inside-supporting ul li {
 	list-style:disc;
@@ -306,7 +325,7 @@ aside h2 {
 	margin-bottom: 0.25em;
 }
 .inside-content ul {
-	margin:0.75em 0 0.75em 6em;
+	margin: 0.75em 0 0.75em 3em;
 	padding:0;
 	list-style: disc;
 }
@@ -315,19 +334,6 @@ aside h2 {
 	padding:0;
 	margin-bottom: 0.5em;
 }
-section a {
-	color:$blue3;
-
-
-	section a:visited {
-		color:$blue3;
-	}
-
-	.btn:visited {
-		color:#fefefe;
-	}
-}
-
 .inside-content table {
 	display:inline-block;
 	margin:0;
@@ -375,12 +381,14 @@ section a {
 
 @media all and (min-width: 768px){
     .inside-content table {margin:0 0 2em 2.5em;}
+	.inside-content ul {
+		margin:0.75em 0 0.75em 6em;
+	}
 }
 
 
 
 
-@media all and (min-width: 768px){
 	.hoverlist input {
 		display: none;
 	}
@@ -421,4 +429,46 @@ section a {
 	    padding:0;
 	    margin:0 0 0 1.25em;
     }
+
+
+.portal-logout {
+	float: right;
+    margin-top: -0.75em;
+    margin-right: -1.5em;
+}
+
+.portal-icon {
+	img {width: 38px; margin-right: 0.75em;}
+	a:hover::after {
+
+	    content: attr(data-title);
+	    position: absolute;
+	    background: rgba(0,0,0,0.5);
+	    padding: 0.15em 0.75em;
+	    border-radius: 10px;
+	    color: #fefefe;
+	    margin-left: -60px;
+	    margin-top: 40px;
+	}
+}
+
+ul.no-ball {list-style: none;}
+li.no-ball {    list-style-type: none !important;
+    padding-left: 0;
+    margin-left: 0.25em;}
+li.asterisk {font-size:0.9em; font-weight: 300;}
+
+section {
+
+	a {
+	color:$blue3;
+	}
+
+	a:visited {
+		color:darken($blue3,5%);
+	}
+
+	.btn:visited {
+		color:#fefefe;
+	}
 }
