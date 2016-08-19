@@ -66,7 +66,7 @@
                     <h2><span class="icon-menu"> </span>Menu</h2>
 
                     <ul class="mainList">
-                        <li class="mainLink"><a href="javascript:;">About CAT</a>
+                        <li class="mainLink">About CAT
                             <ul class="innerMenu" id="about">
                                 <li><a href="/about/directors-message">Director's Message</a></li>
                                 <li><a href="/about/school-philosophy">School Philosophy</a></li>
@@ -76,7 +76,7 @@
                             </ul>
                         </li>
 
-                        <li class="mainLink"><a href="javascript:;">Academics</a>
+                        <li class="mainLink">Academics
                             <ul class="innerMenu" id="academics">
                                 <li><a href="/academics/early-childhood">Early Childhood</a></li>
                                 <li><a href="/academics/elementary">Elementary</a></li>
@@ -85,22 +85,21 @@
                             </ul>
                         </li>
 
-                        <li class="mainLink"><a href="javascript:;">Campus Life</a>
+                        <li class="mainLink">Campus Life
                             <ul class="innerMenu" id="campusLife">
-                                <li><a href="#">Library</a></li>
-                                <li><a href="#">Sports</a></li>
-                                <li><a href="#">Art Center</a></li>
-                                <li><a href="#">Counseling</a></li>
-                                <li><a href="#">Technology</a></li>
-                                <li><a href="#">Magazines</a></li>
-                                <li><a href="#">Cafeteria</a></li>
+                                <li><a href="/campus-life/library">Library</a></li>
+                                <li><a href="/campus-life/sports">Sports</a></li>
+                                <li><a href="/campus-life/art-center">Art Center</a></li>
+                                <li><a href="/campus-life/counseling">Counseling</a></li>
+                                <li><a href="/campus-life/magazines">Magazines</a></li>
+                                <li><a href="/campus-life/cafeteria">Cafeteria</a></li>
                             </ul>
                         </li>
 
-                        <li class="mainLink"><a href="javascript:;">Join Us</a>
+                        <li class="mainLink">Join Us
                             <ul class="innerMenu" id="joinUs">
-                                <li><a href="#">Student admissions</a></li>
-                                <li><a href="#">Employment</a></li>
+                                <li><a href="/join/admissions">Student admissions</a></li>
+                                <li><a href="/join/employment">Employment</a></li>
                             </ul>
                         </li>
                     </ul>
