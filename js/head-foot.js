@@ -1,22 +1,14 @@
 //MOBILE FUNCTIONS
-
-var showButton = document.querySelector("#hamburgerButton");
-showButton.addEventListener("click", showMenu);
-
-var hideButton = document.querySelector("#closeButton");
-hideButton.addEventListener("click", hideMenu);
-
 var menu = document.querySelector("nav.menu");
 
-
 function showMenu(){
-    menu.className = "menu show";
-    document.body.classList.toggle("no-scroll");
-	// document.body.addEventListener("transitionend", afterTransition, true);//firefox
-	// document.body.addEventListener("webkitTransitionEnd", afterTransition, true);//chrome
 	function afterTransition(){
         document.body.classList.toggle("disable");
 	}
+    menu.className = "menu show";
+    document.body.classList.toggle("no-scroll");
+	document.body.addEventListener("transitionend", afterTransition, true);//firefox
+	document.body.addEventListener("webkitTransitionEnd", afterTransition, true);//chrome
 }
 
 function hideMenu(){
@@ -24,10 +16,15 @@ function hideMenu(){
     menu.className = "menu";
 }
 
+var showButton = document.querySelector("#hamburgerButton");
+showButton.addEventListener("click", showMenu);
+
+var hideButton = document.querySelector("#closeButton");
+hideButton.addEventListener("click", hideMenu);
+
+
 //DESKTOP FUNCTION
 var quicklinkBtn = document.getElementById("quicklink");
-quicklinkBtn.addEventListener("click", showQL);
-
 function showQL() {
     var qll = document.querySelector("ul.quicklinks");
 
@@ -40,7 +37,5 @@ function showQL() {
     }
 }
 
-$('ul li a').click(function() {
-    $('.innerMenu li.current').removeClass('accordion');
-    $(this).closest('li').addClass('accordion');
-});
+quicklinkBtn.addEventListener("click", showQL);
+
