@@ -6,7 +6,6 @@
 		<meta name="google-signin-client_id" content="628070934956-db3ugplt1u0iecgujqt2u7fd6jvoir7v.apps.googleusercontent.com">
         <title>Colegio Americano de Torreón <?php if (!empty($pagetitle)) { ?> - <?php echo $pagetitle; ?><?php } else { echo " - excellence for life";} ?></title>
         <link rel="stylesheet" href="/css/base.css" type="text/css">
-        <?php if ($signin == "log") {?> <script src="https://apis.google.com/js/platform.js" async defer></script> <?php }; ?>
 		<script async type="text/javascript">
 			WebFontConfig = {google:{ families:['Ubuntu:300,400,400italic,500,500italic,700,700italic:latin' ]}};(function(d) {var wf = d.createElement('script'), s = d.scripts[0];wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';s.parentNode.insertBefore(wf, s);})(document);
 		  </script>
@@ -14,7 +13,7 @@
     </head>
 
     <body <?php if (!empty($pagetitle)) { ?> class="not-home" <?php } ?>>
-        <img src="/img/Menu.svg" id="hamburgerButton">
+       <span class="icon-menu" id="hamburgerButton"> </span>
         <header class="topHeader">
             <div class="logo" data-slides='[
 					"/img/himg-1.jpg",
@@ -91,7 +90,7 @@
                                 <li><a href="/campus-life/sports">Sports</a></li>
                                 <li><a href="/campus-life/art-center">Art Center</a></li>
                                 <li><a href="/campus-life/counseling">Counseling</a></li>
-                                <li><a href="/campus-life/magazines">Magazines</a></li>
+                                <li><a href="/campus-life/magazine">Magazines</a></li>
                                 <li><a href="/campus-life/cafeteria">Cafeteria</a></li>
                             </ul>
                         </li>

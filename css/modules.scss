@@ -138,6 +138,7 @@ $all: $blue3;
 
 		.inside-content {
 			flex-basis: 70%;
+			z-index: 1;
 		}
 		.inside-supporting {
 			flex-basis: 30%;
@@ -185,7 +186,12 @@ $all: $blue3;
 		.content {margin:2em 0;}
 		p {padding:0.5em 4.5em; font-size:1em; line-height:1.75em; font-weight:400;}
 		blockquote {width:400px;}
-		h2,h3,h4,h5,h6 {padding-left:2.5em; clear: both;}
+		h2,h3,h4,h5,h6 {clear: both;}
+		h2 {padding-left:2.5vw;}
+		h3 {padding-left:2.75vw; }
+		h4 {padding-left:3vw;}
+		h5 {padding-left:3.25vw; }
+		h6 {padding-left:3.5vw; }
 		embed, iframe { margin-left: 2.5em; max-width:93%;}
 	}
 

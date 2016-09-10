@@ -15,6 +15,7 @@ $news-img-height: 600px;
 
     .news-content {
         padding: 30px 20px 70px 20px;
+        background:#fefefe;
 
         .news-header {
             color: $red;
@@ -44,6 +45,8 @@ $news-img-height: 600px;
             display: block;
             text-align: right;
             margin-top: 40px;
+            background:#fefefe;
+            margin-right:15px;
 
             a, .icon-chevron-double {
                 font-weight: bold;
@@ -172,7 +175,7 @@ $news-img-height: 600px;
         }
 
         .news-image {
-            margin-top: -100px;
+            margin-top: -50px;
         }
     }
 }
