@@ -1,8 +1,8 @@
-//Accordion menu
+// Accordion menu
 var mainLinks = document.querySelectorAll('li.mainLink');
-document.querySelector('ul.menu').addEventListener('click', accordion);
+
 function accordion(e) {
-    var tElem = e.target;  
+   var tElem = e.target;
     if (tElem.className === "mainLink"){
         tElem.className += " accordion";
     }
@@ -15,3 +15,12 @@ function accordion(e) {
         }
     }
 }
+
+document.querySelector('ul.mainList').addEventListener('click', accordion);
+
+
+
+// $('ul li a').click(function() {
+//    $('.innerMenu li.current').removeClass('accordion');
+//    $(this).closest('li').addClass('accordion');
+//});

@@ -53,12 +53,18 @@ $green: #659603;
 		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8));
 	    width: 100%;
 	    position: absolute;
-	    height: 115%;
+	    height: 108%;
 	    top: 0;
 	    left: 0;
 	    z-index:0;
 	}
 
+}
+
+.not-home .logo {
+	&:before {
+		height:115%;
+	}
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -92,7 +98,11 @@ $green: #659603;
     }
 
 	.not-home {
-		.logo {padding-bottom:10em}
+		.logo {
+			padding-bottom:10em;
+
+			&:before { height:100%; }
+		}
 	}
 }
 
@@ -252,6 +262,7 @@ $green: #659603;
         padding: 0.5em;
         margin: 0 1.1em;
         border: 0;
+        top:1.8em;
     }
 
 }
@@ -315,31 +326,26 @@ $green: #659603;
     font-size: 0.9em;
     margin: 0.5em 0 0 0;
     border-top: 1px solid #f5f5f5;
-    
-    
+
+
 }
 
 .accordion {
     background: transparentize($red, 0.2);
     color: white;
-    
-    a {
-        color:white;
-    }
-    
+
     .innerMenu {
         background: white;
         max-height: 15em;
-        
+
         a {
             color:$red;
         }
     }
 }
 
-
-.innerMenu.accordion {
-    
+.mainLink.accordion {
+	color:white;
 }
 
 .innerMenu li {
@@ -458,14 +464,24 @@ $green: #659603;
         max-height: 0;
         overflow-y: hidden;
         transition: all 0.5s;
+        border:0;
     }
 
     .mainLink:hover .innerMenu {
         overflow-y: visible;
         padding: 0.9em;
-        top: 2.05em;
+        top: 2.3em;
         max-height: 2em;
         opacity: 1;
+    }
+
+    .innerMenu {
+	    margin:0;
+    }
+
+    .innerMenu li {
+	    border-bottom:0;
+	    padding:0;
     }
 
 
@@ -503,7 +519,7 @@ $green: #659603;
 	#about::after, #academics::after, #campusLife::after, #joinUs::after {
 	    content: "";
 	    width: 100%;
-	    height: 25px;
+	    height: 55px;
 	    background: transparent;
 	    position: absolute;
 	    z-index: 0;

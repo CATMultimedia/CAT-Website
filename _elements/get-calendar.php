@@ -84,7 +84,7 @@ $calTimeZone = $events->timeZone; //GET THE TZ OF THE CALENDAR
 					</span></p>
 					<?php
 						if(!$location) { ?>
-							<p class="event-place" itemprop="description">CVPA Auditorium</p>
+							<p class="event-place" itemprop="description"><?php echo $location; ?></p>
 						<?php } ?>
 		        </div>
 		        <p class="event-hour"><?PHP echo $newtime; ?></p>

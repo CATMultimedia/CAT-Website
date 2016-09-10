@@ -128,7 +128,7 @@ array_sort_by_column($events_master, 'date');
 						if($class=="ec") { echo "Early Childhood";} elseif($class=="es"){ echo "Elementary";} elseif($class=="hs") {echo "High School";} else {echo "CAT Community";} ?>
 					</span></p>
 					<?php
-						if(!$location) { ?>
+						if(!empty($event['location'])) { ?>
 							<p class="event-place" itemprop="description"><?php echo $event['location']; ?></p>
 						<?php } ?>
 		        </div>

@@ -8,7 +8,7 @@ $font-line-height: 1.5em !default;
 $font-base-size: 1rem !default;
 $news-img-width: 1200px;
 $news-img-height: 600px;
- 
+
 
 $red: #BA0000;
 $red2: #A03030;
@@ -18,13 +18,13 @@ $blue3: #366CAC;
 $teal: #026161;
 $orange: #EC8412;
 $green: #659603;
- 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html {font:17px/18px Ubuntu;}
+html {font:17px/18px Ubuntu, sans-serif;}
 
 /*Normalizing*/
 body {

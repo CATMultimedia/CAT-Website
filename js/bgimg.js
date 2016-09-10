@@ -2,12 +2,13 @@
     var $slides = $('[data-slides]');
     var images = $slides.data('slides');
     var count = images.length;
-    var loader = new Array();
+    var loader = [];
+    var i;
 
 	function preload() {
 		for (i = 0; i < count; i++) {
-			loader[i] = new Image()
-			loader[i].src = images[i]
+			loader[i] = new Image();
+			loader[i].src = images[i];
 		}
 	}
 
