@@ -2,13 +2,31 @@
 var menu = document.querySelector("nav.menu");
 
 function showMenu(){
-	function afterTransition(){
-        document.body.classList.toggle("disable");
-	}
+	//function afterTransition(){
+    //    document.body.classList.toggle("disable");
+	//}
     menu.className = "menu show";
     document.body.classList.toggle("no-scroll");
-	document.body.addEventListener("transitionend", afterTransition, true);//firefox
-	document.body.addEventListener("webkitTransitionEnd", afterTransition, true);//chrome
+	//document.body.addEventListener("transitionend", afterTransition, true);//firefox
+	//document.body.addEventListener("webkitTransitionEnd", afterTransition, true);//chrome
+
+/*
+		var blockMenuHeaderScroll;
+		window.blockMenuHeaderScroll = false;
+		$(window).on('touchstart', function(e)	{
+		    if ($(e.target).closest('.no-scroll').length === 1) {
+		        blockMenuHeaderScroll = true;
+		    }
+		});
+		$(window).on('touchend', function() {
+		    blockMenuHeaderScroll = false;
+		});
+		$(window).on('touchmove', function(e) {
+		    if (blockMenuHeaderScroll) {
+		        e.preventDefault();
+		    }
+		});
+*/
 }
 
 function hideMenu(){
@@ -38,4 +56,5 @@ function showQL() {
 }
 
 quicklinkBtn.addEventListener("click", showQL);
+
 
